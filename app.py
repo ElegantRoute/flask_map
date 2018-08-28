@@ -90,7 +90,7 @@ def map():
         appendToMarkers(mark, m)
 
     # 어린이안전구역
-    for i in read_collection('childSafetyZone'):
+    for i in read_collection('childSafetyZone'):#childSafetyZone
         m = {'title': 'childSafetyZone', 'infobox': i['대상시설명'], 'lat': i['위도'], 'lng': i['경도'],
              'icon': '/static/icon/childSafetyZone.png'}
         appendToMarkers(mark, m)
@@ -120,13 +120,13 @@ def map():
         appendToMarkers(mark, m)
 
     # 서울아동안전지킴이집
-    for i in read_collection('childSafetyHouse'):
+    for i in read_collection('childrSafetyHouse'):#childrSafetyHouse
         m = {'title': 'childSafetyHouse', 'infobox': i['이름'], 'lat': i['위도'], 'lng': i['경도'],
              'icon': '/static/icon/childSafetyHouse.png'}
         appendToMarkers(mark, m)
 
     # 호텔
-    for i in read_collection('motel'):
+    for i in read_collection('motel'):#motel
         m = {'title': 'motel', 'infobox': i['사업장명'], 'lat': i['위도'], 'lng': i['경도'], 'icon': '/static/icon/motel.png'}
         appendToMarkers(mark, m)
 
@@ -157,11 +157,21 @@ def map():
     return render_template('tmap.html', mark=mark)
 
 
-@app.route('/index')
-def index():
-    return render_template('index.html')
+@app.route('/documentation')
+def documentation():
+    return render_template('documentation.html')
 
+@app.route('/polygon')
+def polygon():
+    return render_template('polygon.html')
 
+@app.route('/echart')
+def echart():
+    return render_template('echart3.html')
+
+@app.route('/datascience')
+def dataScience():
+    return render_template('science.html')
 
 if __name__ == '__main__':
     app.run()

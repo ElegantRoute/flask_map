@@ -1,4 +1,4 @@
-#!C:\Users\je941\PycharmProjects\untitled5\venv\Scripts\python.exe
+#!C:\Programming\Project\pyCharm\Admintres\venv\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==10.0.1','console_scripts','pip3'
 __requires__ = 'pip==10.0.1'
 import re

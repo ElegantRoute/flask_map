@@ -58,16 +58,16 @@ $(function() {
 				itouch: 1791
 			}],
 			xkey: 'period',
-			ykeys: ['iphone', 'ipad', 'itouch'],
-			labels: ['iPhone', 'iPad', 'iPod Touch'],
+			ykeys: ['13세미만', '13-20세'],
+			labels: ['13세미만', '13-20세'],
 			pointSize: 0,
 			lineWidth:0,
 			fillOpacity: 1,
-			pointStrokeColors:['#ff6028', '#ff936d', '#ffaf93'],
+			pointStrokeColors:['#ff6028', '#ff936d'],
 			behaveLikeLine: true,
 			grid: false,
 			hideHover: 'auto',
-			lineColors: ['#ff6028', '#ff936d', '#ffaf93'],
+			lineColors: ['#ff6028', '#ff936d'],
 			resize: true,
 			redraw: true,
 			smooth: true,
@@ -223,23 +223,26 @@ $(function() {
 		Morris.Bar({
 			element: 'morris_bar_chart',
 			data: [{
-				device: 'iPhone',
-				geekbench: 136
+				device: '교통사고',
+				geekbench: 270
 			}, {
-				device: 'iPhone 3G',
-				geekbench: 137
+				device: '질식사고',
+				geekbench: 114
 			}, {
-				device: 'iPhone 3GS',
-				geekbench: 275
+				device: '익사사고',
+				geekbench: 92
 			}, {
-				device: 'iPhone 4',
-				geekbench: 380
+				device: '추락사고',
+				geekbench: 78
 			}, {
-				device: 'iPhone 4S',
-				geekbench: 655
+				device: '화재사고',
+				geekbench: 20
 			}, {
-				device: 'iPhone 5',
-				geekbench: 1571
+				device: '중독사고',
+				geekbench: 3
+			}, {
+				device: '기타 외인',
+				geekbench: 59
 			}],
 			xkey: 'device',
 			ykeys: ['geekbench'],
@@ -262,53 +265,48 @@ $(function() {
 		Morris.Line({
         element: 'morris_extra_line_chart',
         data: [{
+            period: '2006',
+            under13age: 946,
+
+        }, {
+           period: '2007',
+            under13age: 1055,
+        }, {
+            period: '2008',
+            under13age: 1208,
+        }, {
+            period: '2009',
+            under13age: 1007,
+        }, {
             period: '2010',
-            iphone: 50,
-            ipad: 80,
-            itouch: 20
+            under13age: 1180,
         }, {
-            period: '2011',
-            iphone: 130,
-            ipad: 100,
-            itouch: 80
+           period: '2011',
+            under13age: 1057,
         }, {
-            period: '2012',
-            iphone: 80,
-            ipad: 60,
-            itouch: 70
+           period: '2012',
+            under13age: 1127,
         }, {
-            period: '2013',
-            iphone: 70,
-            ipad: 200,
-            itouch: 140
+           period: '2013',
+            under13age: 1172,
         }, {
-            period: '2014',
-            iphone: 180,
-            ipad: 150,
-            itouch: 140
+           period: '2014',
+            under13age: 1208,
         }, {
-            period: '2015',
-            iphone: 105,
-            ipad: 100,
-            itouch: 80
-        },
-         {
-            period: '2016',
-            iphone: 250,
-            ipad: 150,
-            itouch: 200
+           period: '2015',
+            under13age: 1272,
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        ykeys: ['under13age'],
+        labels: ['under13age'],
         pointSize: 2,
         fillOpacity: 0,
 		lineWidth:2,
-		pointStrokeColors:['#ff6028', '#ff936d', '#ffaf93'],
+		pointStrokeColors:['#ff6028'],
 		behaveLikeLine: true,
 		grid: false,
-		hideHover: 'auto',
-		lineColors: ['#ff6028', '#ff936d', '#ffaf93'],
+		hideHover: true,
+		lineColors: ['#ff6028'],
 		resize: true,
 		gridTextColor:'#878787',
 		gridTextFamily:"Roboto"

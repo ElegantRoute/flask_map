@@ -229,17 +229,17 @@ $( document ).ready(function() {
 		var data4 = {
 			datasets: [{
 				data: [
-					11,
-					16,
-					7
+					10,
+					20,
+					30
 				],
 				backgroundColor: [
-					"#ff936d",
+					"#ff00ff",
 					"#ff6028",
 					"#ffaf93",
 				],
 				hoverBackgroundColor: [
-					"#ff936d",
+					"#ff00ff",
 					"#ff6028",
 					"#ffaf93",
 				],
@@ -405,53 +405,65 @@ $( document ).ready(function() {
 
 	if( $('#chart_6').length > 0 ){
 		var ctx6 = document.getElementById("chart_6").getContext("2d");
+
 		var data6 = {
 			 labels: [
-			"lab 1",
-			"lab 2",
-			"lab 3"
+			"교통사고",
+			"성범죄",
+			"놀이중 사고",
+			"유괴",
+				 "유해미디어노출",
+				 "기타"
 		],
 		datasets: [
 			{
-				data: [300, 50, 100],
+				data: [30.8, 17.5, 16.8, 13,12.3,9.7],
 				backgroundColor: [
 					"#ff936d",
 					"#ff6028",
-					"#ffaf93"
+					"#ffaf93",
+					"#ffbf93",
+					"#ffcf93",
+					"#ffdf93"
 				],
 				hoverBackgroundColor: [
 					"#ff936d",
 					"#ff6028",
-					"#ffaf93"
+					"#ffaf93",
+					"#ffbf93",
+					"#ffcf93",
+					"#ffdf93"
 				]
 			}]
+
 		};
 		
 		var pieChart  = new Chart(ctx6,{
 			type: 'pie',
 			data: data6,
 			options: {
-				animation: {
-					duration:	3000
-				},
-				responsive: true,
-				legend: {
-					labels: {
-					fontFamily: "Roboto",
-					fontColor:"#878787"
-					}
-				},
-				tooltip: {
-					backgroundColor:'rgba(33,33,33,1)',
-					cornerRadius:0,
-					footerFontFamily:"'Roboto'"
-				},
-				elements: {
-					arc: {
-						borderWidth: 0
-					}
-				}
-			}
+                animation: {
+                    duration: 3000
+                },
+                responsive: true,
+                legend: {
+                    labels: {
+                        fontFamily: "Roboto",
+                        fontColor: "#878787"
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(33,33,33,1)',
+                    cornerRadius: 0,
+                    footerFontFamily: "'Roboto'"
+                },
+                elements: {
+                    arc: {
+                        borderWidth: 0
+                    }
+                }
+            }
+
 		});
 	}
 
@@ -507,3 +519,65 @@ $( document ).ready(function() {
 		});
 	}	
 });
+	if( $('#chart_8').length > 0 ){
+		var ctx6 = document.getElementById("chart_8").getContext("2d");
+
+		var data6 = {
+			 labels: [
+			"보행자",
+			"차량탑승자",
+			"자전거탑승자",
+			"오토바이탑승자",
+				 "기타"
+		],
+		datasets: [
+			{
+				data: [43.7, 20.4, 5.9, 3.7, 26.3],
+				backgroundColor: [
+					"#ff936d",
+					"#ff6028",
+					"#ffaf93",
+					"#ffbf93",
+					"#ffcf93",
+					"#ffdf93"
+				],
+				hoverBackgroundColor: [
+					"#ff936d",
+					"#ff6028",
+					"#ffaf93",
+					"#ffbf93",
+					"#ffcf93",
+					"#ffdf93"
+				]
+			}]
+
+		};
+
+		var pieChart  = new Chart(ctx6,{
+			type: 'pie',
+			data: data6,
+			options: {
+                animation: {
+                    duration: 3000
+                },
+                responsive: true,
+                legend: {
+                    labels: {
+                        fontFamily: "Roboto",
+                        fontColor: "#878787"
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(33,33,33,1)',
+                    cornerRadius: 0,
+                    footerFontFamily: "'Roboto'"
+                },
+                elements: {
+                    arc: {
+                        borderWidth: 0
+                    }
+                }
+            }
+
+		});
+	}

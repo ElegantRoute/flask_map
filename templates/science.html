@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>우리아이 안전한 길</title>
+    <meta name="description" content="Admintres is a Dashboard & Admin Site Responsive Template by hencework." />
+    <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Admintres Admin, Admintresadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
+    <meta name="author" content="hencework"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Morris Charts CSS -->
+    <link href="static/vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Data table CSS -->
+    <link href="static/vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="static/vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
+
+    <!-- bootstrap-select CSS -->
+    <link href="static/vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Bootstrap Switches CSS -->
+    <link href="static/vendors/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- switchery CSS -->
+    <link href="static/vendors/bower_components/switchery/dist/switchery.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Custom CSS -->
+    <link href="static/dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- Preloader -->
+<div class="preloader-it">
+    <div class="la-anim-1"></div>
+</div>
+<!-- /Preloader -->
+<div class="wrapper theme-2-active navbar-top-light">
+    <!-- Top Menu Items -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="height: 100px;">
+        <div class="nav-wrap">
+            <div class="mobile-only-brand pull-left" style="height:100px;">
+                <div class="nav-header pull-left" style="height:100px;">
+                    <div class="logo-wrap" style="padding: 10px 0 0 0;">
+                        <a href="/">
+                            <img class="brand-img" src="static/icon/logo.png" style="height: 70px;" alt="brand"/>
+                            <span class="brand-text"><img style="height: 80px; "  src="static/icon/logo3.png" alt="brand"/></span>
+                        </a>
+                    </div>
+                </div>
+                <a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="ti-align-left"></i></a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- /Top Menu Items -->
+
+    <!-- Left Sidebar Menu -->
+    <div class="fixed-sidebar-left">
+        <ul class="nav navbar-nav side-nav nicescroll-bar">
+            <li class="navigation-header" style="padding: 50px 0 0 0;">
+            </li>
+            <li>
+                <a href="{{ url_for('map') }}"><div class="pull-left"><i class="ti-map-alt mr-20"></i><span class="right-nav-text">우아한 길</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+            </li>
+            <li>
+                <a href="{{ url_for('documentation') }}"><div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">소개글</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><div class="pull-left"><i class="ti-bar-chart  mr-20"></i><span class="right-nav-text">분석</span></div><div class="pull-right"><i class="ti-angle-down"></i></div><div class="clearfix"></div></a>
+                <ul id="ecom_dr" class="collapse collapse-level-1">
+                    <li>
+                        <a href="{{ url_for('dataScience') }}">안전등급 분석</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('polygon') }}">서울시 구별 통계</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('echart') }}">서울시 요소별 통계</a>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+    <!-- /Left Sidebar Menu -->
+
+    <!-- Right Sidebar Menu -->
+    <div class="fixed-sidebar-right">
+        <ul class="right-sidebar">
+            <li>
+                <div  class="tab-struct custom-tab-1">
+                    <ul role="tablist" class="nav nav-tabs" id="right_sidebar_tab">
+                        <li class="active" role="presentation"><a aria-expanded="true"  data-toggle="tab" role="tab" id="chat_tab_btn" href="#chat_tab">chat</a></li>
+                        <li role="presentation" class=""><a  data-toggle="tab" id="messages_tab_btn" role="tab" href="#messages_tab" aria-expanded="false">messages</a></li>
+                        <li role="presentation" class=""><a  data-toggle="tab" id="todo_tab_btn" role="tab" href="#todo_tab" aria-expanded="false">todo</a></li>
+                    </ul>
+                    <div class="tab-content" id="right_sidebar_content">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- /Right Sidebar Menu -->
+
+
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="container pt-30">
+            {#				<!-- Row -->#}
+            {#				<div class="row">#}
+            {#					<div class="col-md-8 col-sm-6">#}
+            {#						<div class="row">#}
+            {#							<div class="col-sm-12 col-xs-12">#}
+            {#								<div class="panel panel-default border-panel card-view">#}
+            {#									<div class="panel-heading">#}
+            {#										<div class="pull-left">#}
+            {#											<h6 class="panel-title txt-dark">sales analytics</h6>#}
+            {#										</div>#}
+            {#										<div class="pull-right">#}
+            {#											<div class="pull-left form-group mb-0 sm-bootstrap-select mr-15">#}
+            {#												<select class="selectpicker" data-style="form-control">#}
+            {#													<option selected value='1'>Janaury</option>#}
+            {#													<option value='2'>February</option>#}
+            {#													<option value='3'>March</option>#}
+            {#													<option value='4'>April</option>#}
+            {#													<option value='5'>May</option>#}
+            {#													<option value='6'>June</option>#}
+            {#													<option value='7'>July</option>#}
+            {#													<option value='8'>August</option>#}
+            {#													<option value='9'>September</option>#}
+            {#													<option value='10'>October</option>#}
+            {#													<option value='11'>November</option>#}
+            {#													<option value='12'>December</option>#}
+            {#												</select>#}
+            {#											</div>#}
+            {#										</div>#}
+            {#										<div class="clearfix"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-wrapper collapse in">#}
+            {#										<div class="panel-body">#}
+            {#											<ul class="flex-stat mb-10 ml-15">#}
+            {#												<li class="text-left auto-width mr-60">#}
+            {#													<span class="block">Traffic</span>#}
+            {#													<span class="block txt-dark weight-500 font-18"><span class="counter-anim">3,24,222</span></span>#}
+            {#													<span class="block txt-success mt-5">#}
+            {#														<i class="zmdi zmdi-caret-up pr-5 font-20"></i><span class="weight-500">+15%</span>#}
+            {#													</span>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</li>#}
+            {#												<li class="text-left auto-width mr-60">#}
+            {#													<span class="block">Orders</span>#}
+            {#													<span class="block txt-dark weight-500 font-18"><span class="counter-anim">1,23,432</span></span>#}
+            {#													<span class="block txt-success mt-5">#}
+            {#														<i class="zmdi zmdi-caret-up pr-5 font-20"></i><span class="weight-500">+4%</span>#}
+            {#													</span>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</li>#}
+            {#												<li class="text-left auto-width">#}
+            {#													<span class="block">Revenue</span>#}
+            {#													<span class="block txt-dark weight-500 font-18">$<span class="counter-anim">324,222</span></span>#}
+            {#													<span class="block txt-danger mt-5">#}
+            {#														<i class="zmdi zmdi-caret-down pr-5 font-20"></i><span class="weight-500">-5%</span>#}
+            {#													</span>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</li>#}
+            {#											</ul>#}
+            {#											<div id="e_chart_1" class="" style="height:418px;"></div>#}
+            {#										</div>#}
+            {#									</div>#}
+            {#								</div>#}
+            {#							</div>#}
+            {#							<div class="col-md-6 col-xs-12">#}
+            {#									<div class="panel panel-default border-panel card-view sm-data-box-3">#}
+            {#									<div class="panel-heading">#}
+            {#										<div class="pull-left">#}
+            {#											<h6 class="panel-title txt-dark">conversion rate</h6>#}
+            {#										</div>#}
+            {#										<div class="clearfix"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-wrapper collapse in">#}
+            {#										<div class="panel-body">#}
+            {#											<div class="col-sm-6 col-xs-7 pa-0">#}
+            {#												<span id="pie_chart_4" class="easypiechart" data-percent="33">#}
+            {#													<span class="percent block txt-dark weight-500"></span>#}
+            {#													<span class="block txt-success text-center">#}
+            {#														<i class="zmdi zmdi-caret-up pr-5 font-20"></i><span class="weight-500">+33%</span>#}
+            {#													</span>#}
+            {#												</span>#}
+            {#											</div>#}
+            {#											<div class="col-sm-6 col-xs-5 pr-0">#}
+            {#												<ul class="flex-stat mb-15">#}
+            {#													<li class="text-left block no-float full-width mb-15">#}
+            {#														<span class="block">Cart Abandonment</span>#}
+            {#														<span class="block txt-dark weight-500  font-18"><span class="counter-anim">73</span>%</span>#}
+            {#														<span class="block txt-success pull-left mt-5">#}
+            {#															<i class="zmdi zmdi-caret-up pr-5 font-20 pull-left"></i><span class="weight-500 pull-left">+15%</span>#}
+            {#														</span>#}
+            {#														<div class="clearfix"></div>#}
+            {#													</li>#}
+            {#													<li class="text-left block no-float full-width">#}
+            {#														<span class="block">Revenue Left</span>#}
+            {#														<span class="block txt-dark weight-500  font-18">$<span class="counter-anim">12,432</span></span>#}
+            {#														<span class="block txt-success pull-left mt-5">#}
+            {#															<i class="zmdi zmdi-caret-up pr-5 font-20 pull-left"></i><span class="weight-500 pull-left">+4%</span>#}
+            {#														</span>#}
+            {#														<div class="clearfix"></div>#}
+            {#													</li>#}
+            {#												</ul>#}
+            {#											</div>#}
+            {#										</div>#}
+            {#									</div>#}
+            {#								</div>#}
+            {#							</div>#}
+            {#							<div class="col-md-6 col-xs-12">#}
+            {#								<div class="panel panel-default border-panel card-view">#}
+            {#									<div class="panel-heading">#}
+            {#										<div class="pull-left">#}
+            {#											<h6 class="panel-title txt-dark">Top Keywords</h6>#}
+            {#										</div>#}
+            {#										<div class="pull-right">#}
+            {#											<a href="#" class="pull-left inline-block mr-15">#}
+            {#												<i class="zmdi zmdi-download"></i>#}
+            {#											</a>#}
+            {#											<a href="#" class="pull-left inline-block close-panel" data-effect="fadeOut">#}
+            {#												<i class="zmdi zmdi-close"></i>#}
+            {#											</a>#}
+            {#										</div>#}
+            {#										<div class="clearfix"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-wrapper collapse in">#}
+            {#										<div class="panel-body row pa-0">#}
+            {#												<div class="table-wrap sm-data-box-2">#}
+            {#												<div class="table-responsive">#}
+            {#												  <table class="table table-striped mb-0">#}
+            {#													<thead>#}
+            {#													  <tr>#}
+            {#														<th>Keyword</th>#}
+            {#														<th>Revenue</th>#}
+            {#														<th>Conversion Rate</th>#}
+            {#													  </tr>#}
+            {#													</thead>#}
+            {#													<tbody>#}
+            {#													  <tr>#}
+            {#														<td>adidas</td>#}
+            {#														<td>$49,897</td>#}
+            {#														<td>8.61%</td>#}
+            {#													  </tr>#}
+            {#													  <tr>#}
+            {#														<td>men's park</td>#}
+            {#														<td>$15,478</td>#}
+            {#														<td>2.10%</td>#}
+            {#													  </tr>#}
+            {#													  <tr>#}
+            {#														<td>nutiva coconut oil</td>#}
+            {#														<td>$23,546</td>#}
+            {#														<td>4.35%</td>#}
+            {#													  </tr>#}
+            {#													  <tr>#}
+            {#														<td>cart software</td>#}
+            {#														<td>$36,589</td>#}
+            {#														<td>1.58%</td>#}
+            {#													  </tr>#}
+            {#													</tbody>#}
+            {#												  </table>#}
+            {#												</div>#}
+            {#											</div>#}
+            {#										</div>#}
+            {#									</div>#}
+            {#								</div>#}
+            {#							</div>#}
+            {#							<div class="col-sm-12 col-xs-12">#}
+            {#								<div class="panel panel-default border-panel card-view panel-refresh">#}
+            {#									<div class="refresh-container">#}
+            {#										<div class="la-anim-1"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-heading">#}
+            {#										<div class="pull-left">#}
+            {#											<h6 class="panel-title txt-dark">Invoice List</h6>#}
+            {#										</div>#}
+            {#										<div class="pull-right">#}
+            {#											<a href="#" class="pull-left inline-block refresh mr-15">#}
+            {#												<i class="zmdi zmdi-replay"></i>#}
+            {#											</a>#}
+            {#											<a href="#" class="pull-left inline-block full-screen mr-15">#}
+            {#												<i class="zmdi zmdi-fullscreen"></i>#}
+            {#											</a>#}
+            {#											<div class="pull-left inline-block dropdown">#}
+            {#												<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>#}
+            {#												<ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">#}
+            {#													<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>option 1</a></li>#}
+            {#													<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>option 2</a></li>#}
+            {#													<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>option 3</a></li>#}
+            {#												</ul>#}
+            {#											</div>#}
+            {#										</div>#}
+            {#										<div class="clearfix"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-wrapper collapse in">#}
+            {#										<div class="panel-body row pa-0">#}
+            {#											<div class="table-wrap">#}
+            {#												<div class="table-responsive">#}
+            {#													<table id="datable_1" class="table  display table-hover border-none">#}
+            {#														<thead>#}
+            {#															<tr>#}
+            {#																<th>#Invoice</th>#}
+            {#																<th>Description</th>#}
+            {#																<th>Amount</th>#}
+            {#																<th>Status</th>#}
+            {#																<th>issue date</th>#}
+            {#																<th>due date</th>#}
+            {#																<th>View</th>#}
+            {#															</tr>#}
+            {#														</thead>#}
+            {##}
+            {#														<tbody>#}
+            {#															<tr>#}
+            {#																<td>#5012</td>#}
+            {#																<td>System Architect</td>#}
+            {#																<td>$205,500</td>#}
+            {#																<td>#}
+            {#																	<span class="label label-danger">unpaid</span>#}
+            {#																</td>#}
+            {#																<td>2011/04/25</td>#}
+            {#																<td>2012/12/02</td>#}
+            {#																<td>#}
+            {#																	<a href="#">#}
+            {#																		<i class="fa fa-file-text-o" aria-hidden="true"></i>#}
+            {#																	</a>#}
+            {#																</td>#}
+            {#															</tr>#}
+            {#															<tr>#}
+            {#																<td>#5013</td>#}
+            {#																<td>Accountant</td>#}
+            {#																<td>$205,500</td>#}
+            {#																<td>#}
+            {#																	<span class="label label-success">paid</span>#}
+            {#																</td>#}
+            {#																<td>2011/07/25</td>#}
+            {#																<td>2012/12/02</td>#}
+            {#																<td>#}
+            {#																	<a href="#">#}
+            {#																		<i class="fa fa-file-text-o" aria-hidden="true"></i>#}
+            {#																	</a>#}
+            {#																</td>#}
+            {#															</tr>#}
+            {#															<tr>#}
+            {#																<td>#5014</td>#}
+            {#																<td>Junior Technical Author</td>#}
+            {#																<td>$205,500</td>#}
+            {#																<td>#}
+            {#																	<span class="label label-warning">pending</span>#}
+            {#																</td>#}
+            {#																<td>2009/01/12</td>#}
+            {#																<td>2012/12/02</td>#}
+            {#																<td>#}
+            {#																	<a href="#">#}
+            {#																		<i class="fa fa-file-text-o" aria-hidden="true"></i>#}
+            {#																	</a>#}
+            {#																</td>#}
+            {#															</tr>#}
+            {#															<tr>#}
+            {#																<td>#5015</td>#}
+            {#																<td>Senior Javascript Developer</td>#}
+            {#																<td>$205,500</td>#}
+            {#																<td>#}
+            {#																	<span class="label label-success">paid</span>#}
+            {#																</td>#}
+            {#																<td>2012/03/29</td>#}
+            {#																<td>2012/12/02</td>#}
+            {#																<td>#}
+            {#																	<a href="#">#}
+            {#																		<i class="fa fa-file-text-o" aria-hidden="true"></i>#}
+            {#																	</a>#}
+            {#																</td>#}
+            {#															</tr>#}
+            {#														</tbody>#}
+            {#													</table>#}
+            {#												</div>#}
+            {#											</div>#}
+            {#										</div>#}
+            {#									</div>#}
+            {#								</div>#}
+            {#							</div>#}
+            {#						</div>#}
+            {#					</div>#}
+            {#					<div class="col-md-4 col-sm-6">#}
+            {#						<div class="row">#}
+            {#							<div class="col-sm-12 col-xs-12">#}
+            {#								<div class="panel panel-default border-panel card-view">#}
+            {#									<div class="panel-heading">#}
+            {#										<div class="pull-left">#}
+            {#											<h6 class="panel-title txt-dark">Items dispached</h6>#}
+            {#										</div>#}
+            {#										<div class="clearfix"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-wrapper collapse in">#}
+            {#										<div class="panel-body">#}
+            {#											<div class="sm-data-box-4 with-icon">#}
+            {#												<div class="relative">#}
+            {#													<div class="data-wrap-left">#}
+            {#														<i class="icon-basket-loaded font-24"></i>#}
+            {#													</div>#}
+            {#													<div class="data-wrap-right">#}
+            {#														<p>Use this deal code to get up to 15000 instant Discount. Hurry off ending soon!	 </p>#}
+            {#														<div class="pt-15 uppercase-font">#}
+            {#															<span>Tracking ID :</span><span class="txt-orange">TRES15</span>#}
+            {#														</div>#}
+            {#													</div>#}
+            {#												</div>#}
+            {#											</div>#}
+            {#										</div>#}
+            {#									</div>#}
+            {#								</div>#}
+            {#							</div>#}
+            {#							<div class="col-sm-12 col-xs-12">#}
+            {##}
+            {#								<div class="panel panel-default border-panel card-view panel-refresh">#}
+            {#									<div class="refresh-container">#}
+            {#										<div class="la-anim-1"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-heading">#}
+            {#										<div class="pull-left">#}
+            {#											<h6 class="panel-title txt-dark">earnings by item type</h6>#}
+            {#										</div>#}
+            {#										<div class="clearfix"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-wrapper collapse in">#}
+            {#										<div class="panel-body row">#}
+            {#											<div class="col-sm-6 pa-0">#}
+            {#												<div id="e_chart_3" class="" style="height:188px;"></div>#}
+            {#											</div>#}
+            {#											<div class="col-sm-6 pr-0 pt-30">#}
+            {#												<div class="label-chatrs">#}
+            {#													<div class="mb-5">#}
+            {#														<span class="clabels circular-clabels inline-block bg-orange-light-1 mr-5"></span>#}
+            {#														<span class="clabels-text font-12 inline-block txt-dark capitalize-font">Paleo Bars</span>#}
+            {#													</div>#}
+            {#													<div class="mb-5">#}
+            {#														<span class="clabels circular-clabels inline-block bg-orange mr-5"></span>#}
+            {#														<span class="clabels-text font-12 inline-block txt-dark capitalize-font">Bow Ties</span>#}
+            {#													</div>#}
+            {#													<div class="">#}
+            {#														<span class="clabels circular-clabels inline-block bg-orange-light-2 mr-5"></span>#}
+            {#														<span class="clabels-text font-12 inline-block txt-dark capitalize-font">Wood Sunglasses</span>#}
+            {#													</div>#}
+            {#												</div>#}
+            {#											</div>#}
+            {#										</div>#}
+            {#									</div>#}
+            {#								</div>#}
+            {#							</div>#}
+            {#							<div class="col-sm-12 col-xs-12">#}
+            {#								<div class="panel panel-default border-panel card-view panel-refresh">#}
+            {#									<div class="refresh-container">#}
+            {#										<div class="la-anim-1"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-heading">#}
+            {#										<div class="pull-left">#}
+            {#											<h6 class="panel-title txt-dark">top 3 products</h6>#}
+            {#										</div>#}
+            {#										<div class="clearfix"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-wrapper collapse in">#}
+            {#										<div class="panel-body row">#}
+            {#											<div class="col-sm-6 pa-0">#}
+            {#												<div id="e_chart_2" class="" style="height:185px;"></div>#}
+            {#											</div>#}
+            {#											<div class="col-sm-6 pr-0 pt-25">#}
+            {#												<div class="label-chatrs">#}
+            {#													<div class="mb-5">#}
+            {#														<span class="clabels inline-block bg-orange-light-1 mr-5"></span>#}
+            {#														<span class="clabels-text font-12 inline-block txt-dark capitalize-font">Paleo Bars</span>#}
+            {#													</div>#}
+            {#													<div class="mb-5">#}
+            {#														<span class="clabels inline-block bg-orange mr-5"></span>#}
+            {#														<span class="clabels-text font-12 inline-block txt-dark capitalize-font">Bow Ties</span>#}
+            {#													</div>#}
+            {#													<div class="mb-5">#}
+            {#														<span class="clabels inline-block bg-orange-light-2 mr-5"></span>#}
+            {#														<span class="clabels-text font-12 inline-block txt-dark capitalize-font">Pocket Squares</span>#}
+            {#													</div>#}
+            {#												</div>#}
+            {#											</div>#}
+            {#										</div>#}
+            {#									</div>#}
+            {#								</div>#}
+            {#							</div>#}
+            {#							<div class="col-sm-12 col-xs-12">#}
+            {#								<div class="panel panel-default border-panel card-view">#}
+            {#									<div class="panel-heading">#}
+            {#										<div class="pull-left">#}
+            {#											<h6 class="panel-title txt-dark">recent activity</h6>#}
+            {#										</div>#}
+            {#										<a class="txt-danger pull-right right-float-sub-text inline-block" href="javascript:void(0)"> clear all </a>#}
+            {#										<div class="clearfix"></div>#}
+            {#									</div>#}
+            {#									<div class="panel-wrapper task-panel collapse in">#}
+            {#										<div class="panel-body row pa-0">#}
+            {#											<div class="list-group mb-0">#}
+            {#												<a href="#" class="list-group-item">#}
+            {#													<span class="badge transparent-badge badge-info capitalize-font">just now</span>#}
+            {#													<i class="zmdi zmdi-calendar-check pull-left"></i><p class="pull-left">Calendar updated</p>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</a>#}
+            {#												<a href="#" class="list-group-item">#}
+            {#													<span class="badge transparent-badge badge-success capitalize-font">4 min</span>#}
+            {#													<i class="zmdi zmdi-comment-alert pull-left"></i><p class=" pull-left">Commented on a post</p>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</a>#}
+            {#												<a href="#" class="list-group-item">#}
+            {#													<span class="badge transparent-badge badge-warning capitalize-font">23 min </span>#}
+            {#													<i class="zmdi zmdi-truck pull-left"></i><p class=" pull-left">Order 392 shipped</p>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</a>#}
+            {#												<a href="#" class="list-group-item">#}
+            {#													<span class="badge transparent-badge badge-success capitalize-font">46 min</span>#}
+            {#													<i class="zmdi zmdi-money pull-left"></i><p class=" pull-left">Invoice 653 has been paid</p>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</a>#}
+            {#												<a href="#" class="list-group-item">#}
+            {#													<span class="badge transparent-badge badge-danger capitalize-font">1 hr</span>#}
+            {#													<i class="zmdi zmdi-account pull-left"></i><p class="pull-left">A new user has been added</p>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</a>#}
+            {#												<a href="#" class="list-group-item">#}
+            {#													<span class="badge transparent-badge badge-warning capitalize-font">just now</span>#}
+            {#													<i class="zmdi zmdi-picture-in-picture pull-left"></i><p class=" pull-left">Finance report has been released</p>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</a>#}
+            {#												<a href="#" class="list-group-item">#}
+            {#													<span class="badge transparent-badge badge-success capitalize-font">1 hr</span>#}
+            {#													<i class="zmdi zmdi-device-hub pull-left"></i><p class="pull-left">Web server hardware updated</p>#}
+            {#													<div class="clearfix"></div>#}
+            {#												</a>#}
+            {#											</div>#}
+            {#										</div>#}
+            {#									</div>#}
+            {#								</div>#}
+            {#							</div>#}
+            {#						</div>#}
+            {#					</div>#}
+            {#				</div>#}
+            {#				<!-- /Row -->#}
+            <!-- Row -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default card-view">
+                        <div class="panel-heading">
+                            <div class="pull-left">
+                                <h6 class="panel-title txt-dark">안전등급</h6>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-wrapper collapse in">
+                            <div class="panel-body">
+                                <p class="mt-10 txt-dark">변수</p>
+                                <ul class="uo-list mt-20 mb-20 pl-15">
+                                    <li class="mb-10 txt-dark">features(독립변수) : 면적당 경찰서, 숙박업소, 공사진행현황, CCTV, 어린이 놀이시설, 아동안전지킴이집, 어린이 보호구역
+                                        (초등학교,유치원,어린이집), (유흥업소,단란주점)의 개수</li>
+                                    <li class="mb-10 txt-dark">target(종속변수) : 면적당 어린이 교통사고수</li>
+                                </ul>
+                                <p class="mt-10 txt-dark">우리는 앞에서 말했듯이 어린이들을 위해 특정 지점 주변의 안전등급을 알려주는 서비스를 제공하고자 했다.</p>
+                                <p class="mt-10 txt-dark">그렇기 위해서는 일단 안전에 대한 척도를 무엇으로 정할 것인가를 정해야 했다.</p>
+                                <p class="mt-10 txt-dark">우리는 부모님들이 아이들의 안전에 대해 우려하는 1순위인 교통사고 2순위인 아동성빔죄 혹은 아동 대상 범죄가</p>
+                                <p class="mt-10 txt-dark">적게 일어나는 곳을, 안전한 곳으로 생각할 수 있었다.</p>
+                                <p class="mt-10 txt-dark">그러나, 아동성범죄와 아동대상 범죄에 관한 데이터는 우리 수준에서 얻기 힘들었고, 그나마 서울특별시 동별로 얻을 수 있는</p>
+                                <p class="mt-10 txt-dark">어린이 교통사고를 이용하기로 했다. 앞으로 우리가 말하는 안전은 교통사고에 대한 것을 말한다.</p>
+                                <p class="mt-10 txt-dark">( 서울특별시는 법정동이 467개이다. )</p>
+                                <br>
+                                <p class="mt-10 txt-dark">우리가 제공하는 서비스(어린이에게 주변 시설에 관한 정보를 알려주는 것)에 따라 어린이 교통사고에 영향을 끼칠 수 있는</p>
+                                <p class="mt-10 txt-dark">feature들을 위에와 같이 생각해 보았다.</p>
+                                <p class="mt-10 txt-dark">위에 있는 feature들처럼 어린이 교통사고에 영향을 끼칠 수 있는 것들을 종속변수로 지정하고,</p>
+                                <p class="mt-10 txt-dark">target 값으로 어린이 교통사고를 넣어주었다. 그리고 우리가 종속변수와 독립변수가 범주형 자료이기에</p>
+                                <p class="mt-10 txt-dark">logistic regression와 decision tree를 적용해보기로 결정하였다.</p>
+                                <p class="mt-10 txt-dark">이 때, 법정동의 면적이 전부 다르기 때문에 모든 데이터를 면적으로 나누었다.</p>
+                                <p class="mt-10 txt-dark">그리고 모델을 적용시켜주기 위해 어린이 교통사고 수를 동면적으로 나눈 값을 3등급(안전, 주의, 위험)으로 분류해주었다.</p>
+                                <p class="mt-10 txt-dark">Logistic regression을 적용한 결과 평균 0.873의 Accuracy을 보였다.</p>
+                                <p class="mt-10 txt-dark">cross-validation의 결과 평균 0.882으로 overfitting(과적합)이 없음을 확인하였다.</p>
+                                <p class="mt-10 txt-dark">decision tree를 적용한 결과 평균 0.820의 Accuracy을 보였다.</p>
+                                <p class="mt-10 txt-dark">즉, Logistic regression을 적합한 모델로 선택.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default border-panel card-view">
+                        <div class="panel-heading">
+                            <div class="pull-left">
+                                <h6 class="panel-title txt-dark">무엇을 넣을까..</h6>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-wrapper collapse in">
+                            <div class="panel-body">
+                                <canvas id="chart_1" height="110"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer pl-30 pr-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>2018 &copy; Admintres. Pampered by Hencework</p>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <p>Follow Us</p>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+    </div>
+    <!-- /Main Content -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- JavaScript -->
+
+<!-- jQuery -->
+<script src="static/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="static/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Data table JavaScript -->
+<script src="static/vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+
+<!-- Slimscroll JavaScript -->
+<script src="static/dist/js/jquery.slimscroll.js"></script>
+
+<!-- simpleWeather JavaScript -->
+<script src="static/vendors/bower_components/moment/min/moment.min.js"></script>
+<script src="static/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+<script src="static/dist/js/simpleweather-data.js"></script>
+
+<!-- Progressbar Animation JavaScript -->
+<script src="static/vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="static/vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+
+<!-- Fancy Dropdown JS -->
+<script src="static/dist/js/dropdown-bootstrap-extended.js"></script>
+
+<!-- Sparkline JavaScript -->
+<script src="static/vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+
+<!-- Owl JavaScript -->
+<script src="static/vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
+<!-- ChartJS JavaScript -->
+<script src="static/vendors/chart.js/Chart.min.js"></script>
+<script src="static/dist/js/chartjs-data.js"></script>
+
+<!-- EasyPieChart JavaScript -->
+<script src="static/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+
+<!-- EChartJS JavaScript -->
+<script src="static/vendors/bower_components/echarts/dist/echarts-en.min.js"></script>
+<script src="static/vendors/echarts-liquidfill.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="static/vendors/bower_components/raphael/raphael.min.js"></script>
+<script src="static/vendors/bower_components/morris.js/morris.min.js"></script>
+
+<!-- Toast JavaScript -->
+<script src="static/vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+
+<!-- Switchery JavaScript -->
+<script src="static/vendors/bower_components/switchery/dist/switchery.min.js"></script>
+
+<!-- Bootstrap Select JavaScript -->
+<script src="static/vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+<!-- Init JavaScript -->
+<script src="static/dist/js/init.js"></script>
+
+
+</body>
+
+</html>

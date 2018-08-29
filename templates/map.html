@@ -243,17 +243,15 @@
                                      title='아동 안전 지킴이 집'/>
                             </li>
                             <li class="menu_selected_good" id="CCTV" onclick="changeMarker('CCTV')">
-                                <img src="static/icon/CCTV.png" alt="CCTV" title='CCTV'/>
+                                <img src="static/icon/cctv.png" alt="CCTV" title='CCTV'/>
                             </li>
                         </ul>
                     </div>
-
-                    <button id="run" type="button help">도움말</button>
-                    <div class="row" id='search'>
-                        <div class="col-md-6" id="first">
-                            <div class="option">
+                    <div class="row" id='search' >
+                        <div class="col-md-6">
+                            <div class="option" id="first">
                                 <div>
-                                    <form onsubmit="searchPlaces(); return false;">
+                                    <form onsubmit="searchPlaces(); return false;" style="display: inline">
                                         <input type="text" id="keyword" size="30" placeholder="출발지점">
                                         <button class="btn btn-success"
                                                 style="padding: 0; width:100px; height: 30px;background: #ff6028;"
@@ -264,6 +262,7 @@
                             </div>
                             <hr>
                         </div>
+                        <button id="run" type="button" class="btn btn-default btn-icon-anim btn-circle btn-sm help" style="display: inline"><i class="fa fa-question"></i></button>
                         <div id="second" class="col-md-6" style="display:none;">
                             <div class="option">
                                 <div>

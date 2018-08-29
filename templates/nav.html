@@ -4,7 +4,7 @@
             <a href="/">
                         <span class="brand-text">
                             <img style="height: 70px; " src="static/icon/logo3.png" alt="우아한 길"/></span>
-                    </a>
+            </a>
         </li>
         <li>
             <a href="{{ url_for('intro') }}">
@@ -14,21 +14,48 @@
             </a>
         </li>
         <li>
-            <a href="{{ url_for('gis') }}">
-                <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">서울시 구별 안전 관련 통계</span></div>
+            <a href="{{ url_for('index') }}">
+                <div class="pull-left"><i class="ti-map-alt mr-20"></i><span class="right-nav-text">우아한길</span></div>
                 <div class="pull-right"></div>
                 <div class="clearfix"></div>
             </a>
         </li>
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr">
-                <div class="pull-left"><i class="ti-bar-chart  mr-20"></i><span class="right-nav-text">분석</span></div>
+                <div class="pull-left"><i class="ti-bar-chart  mr-20"></i><span class="right-nav-text">탐색적 분석</span>
+                </div>
                 <div class="pull-right"><i class="ti-angle-down"></i></div>
                 <div class="clearfix"></div>
             </a>
             <ul id="ecom_dr" class="collapse collapse-level-1">
                 <li>
-                    <a href="{{ url_for('analysis') }}">안전등급 분석</a>
+                    <a href="{{ url_for('gis') }}">
+                        <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">구별 안전 관련</span>
+                        </div>
+                        <div class="pull-right"></div>
+                        <div class="clearfix"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('eda') }}">서울시 요소별 통계</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr">
+                <div class="pull-left"><i class="ti-  mr-20"></i><span class="right-nav-text">예측 분석</span>
+                </div>
+                <div class="pull-right"><i class="ti-angle-down"></i></div>
+                <div class="clearfix"></div>
+            </a>
+            <ul id="ecom_dr" class="collapse collapse-level-1">
+                <li>
+                    <a href="{{ url_for('gis') }}">
+                        <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">구별 안전 관련</span>
+                        </div>
+                        <div class="pull-right"></div>
+                        <div class="clearfix"></div>
+                    </a>
                 </li>
                 <li>
                     <a href="{{ url_for('eda') }}">서울시 요소별 통계</a>

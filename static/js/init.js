@@ -62,7 +62,7 @@ var admintres = function(){
 	var counterAnim = $('.counter-anim');
 	if( counterAnim.length > 0 ){
 		counterAnim.counterUp({ delay: 10,
-        time: 1000});
+        time: 3000});
 	}
 	
 	/*Tooltip*/

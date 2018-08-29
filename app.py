@@ -141,6 +141,17 @@ def eda():
     yield 'eda', {}
 
 
+@app.route('/data')
+@cache.cached(50)
+def data():
+    return render_template('data.html')
+
+
+@ext.register_generator
+def data():
+    yield 'data', {}
+
+
 @app.route('/analysis')
 @cache.cached(50)
 def analysis():

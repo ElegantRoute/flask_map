@@ -8,7 +8,7 @@
         </li>
         <li {% if request.path=='/intro' %}class="active"{% endif %}>
             <a href="{{ url_for('intro') }}">
-                <div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">소개글</span></div>
+                <div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">소개</span></div>
                 <div class="pull-right"></div>
                 <div class="clearfix"></div>
             </a>
@@ -56,9 +56,6 @@
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                     </a>
-                </li>
-                <li>
-                    <a href="{{ url_for('eda') }}">서울시 요소별 통계</a>
                 </li>
             </ul>
         </li>

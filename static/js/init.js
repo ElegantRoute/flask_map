@@ -204,6 +204,32 @@ var admintres = function(){
 	$('.app-nicescroll-bar').slimscroll({height:'162px',size: '4px',color: '#878787',disableFadeOut : true,borderRadius:0});
 	$('.users-nicescroll-bar').slimscroll({height:'370px',size: '4px',color: '#878787',disableFadeOut : true,borderRadius:0});
 
+
+	/*Product carousel*/
+	if( $('.product-carousel').length > 0 )
+	var $owl = $('.product-carousel').owlCarousel({
+		loop:true,
+		margin:15,
+		nav:true,
+		navText: ["<i class='ti-angle-left'></i>","<i class='ti-angle-right'></i>"],
+		dots:false,
+		autoplay:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			400:{
+				items:2
+			},
+			767:{
+				items:3
+				},
+			1399:{
+				items:4
+			}
+		}
+	});
+
 	/*Refresh Init Js*/
 	var refreshMe = '.refresh';
 	$(document).on("click",refreshMe,function (e) {

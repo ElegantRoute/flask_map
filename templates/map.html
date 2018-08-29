@@ -15,7 +15,7 @@
         .category {
             position: absolute;
             overflow: hidden;
-            top: 116px;
+            top: 88px;
             left: 76px;
             width: 38px;
             height: 540px;
@@ -65,7 +65,7 @@
         .category1 {
             position: absolute;
             overflow: hidden;
-            top: 125px;
+            top: 97px;
             right: 100px;
             width: 100px;
             height: 50px;
@@ -80,7 +80,7 @@
         .category2 {
             position: absolute;
             overflow: hidden;
-            top: 125px;
+            top: 97px;
             right: 200px;
             width: 100px;
             height: 50px;
@@ -95,7 +95,7 @@
         .category3 {
             position: absolute;
             overflow: hidden;
-            top: 125px;
+            top: 97px;
             right: 300px;
             width: 100px;
             height: 50px;
@@ -110,7 +110,7 @@
         .predict {
             position: absolute;
             overflow: hidden;
-            top: 600px;
+            bottom: 106px;
             right: 100px;
             width: 100px;
             height: 50px;
@@ -150,13 +150,6 @@
     <div class="row">
         <div class="col-lg-12">
             <div id="w1" class="cpanel" data-cw-expand="true" style="padding-bottom: 30px">
-{#                <div class="cpanel-head">#}
-{#                    <div class="cpanel-head-button">#}
-{#                        <div class="btn-group btn-group-xs" style="margin: 7px 7px 0px 0px;">#}
-{#
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
                 <div class="cpanel-body" style="padding-left: 100px;">
                     <div class="category1" id="category1">
                         <select class="form-control form-control-sm"
@@ -184,7 +177,7 @@
                     </div>
 
 
-                    <div class="category">
+                    <div class="category" id="category">
                         <ul>
                             <li class="menu_selected_bad" id="schoolZone"
                                 onclick="changeMarker('schoolZone')">
@@ -249,7 +242,7 @@
                     </div>
                     <div class="row" id='search' >
                         <div class="col-md-6">
-                            <div class="option" id="first">
+                            <div class="option">
                                 <div>
                                     <form onsubmit="searchPlaces(); return false;" style="display: inline">
                                         <input type="text" id="keyword" size="30" placeholder="출발지점">
@@ -1197,10 +1190,10 @@
                             }
                         },
                         {
-                            el: '#category1',
+                            el: '#category3',
                             templateData: {
-                                title: '반경설정',
-                                content: '반경 몇 km까지 보여줄지 설정하는 부분입니다.'
+                                title: '현위치 검색',
+                                content: '자신의 현재위치로 이동합니다.'
                             }
                         },
                         {
@@ -1211,10 +1204,10 @@
                             }
                         },
                         {
-                            el: '#category3',
+                            el: '#category1',
                             templateData: {
-                                title: '현위치 검색',
-                                content: '자신의 현재위치로 이동합니다.'
+                                title: '반경설정',
+                                content: '반경 몇 km까지 보여줄지 설정하는 부분입니다.'
                             }
                         },
                         {
@@ -1225,7 +1218,7 @@
                             }
                         },
                         {
-                            el: '#category_num',
+                            el: '#analysis',
                             templateData: {
                                 title: '위험&안전요소 확인',
                                 content: '원 안에 각각 몇개의 마커들이 있는지 보여줍니다.'
@@ -1239,7 +1232,7 @@
                             }
                         },
                         {
-                            el: '#search',
+                            el: '#keyword',
                             templateData: {
                                 title: '길찾기',
                                 content: ' 출발지를 입력하면 도착지 입력화면이 나타납니다.'

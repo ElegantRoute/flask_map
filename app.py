@@ -158,6 +158,12 @@ def analysis():
     return render_template('science.html')
 
 
+@app.route('/test')
+@cache.cached(50)
+def test():
+    return render_template('e.html')
+
+
 @ext.register_generator
 def analysis():
     yield 'analysis', {}

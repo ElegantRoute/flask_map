@@ -29,14 +29,14 @@
         </li>
         <li {% if request.path=='/gis' %}class="active"{% endif %}>
             <a href="{{ url_for('gis') }}">
-                <div class="pull-left"><i class="ti-map mr-20"></i><span class="right-nav-text">EDA : 구별 안전 관련 요소 통계</span></div>
+                <div class="pull-left"><i class="ti-map mr-20"></i><span class="right-nav-text">구별 안전 관련 통계</span></div>
                 <div class="pull-right"></div>
                 <div class="clearfix"></div>
             </a>
         </li>
          <li {% if request.path=='/eda' %}class="active"{% endif %}>
             <a href="{{ url_for('eda') }}">
-                <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">EDA : 안전 관련 구별 통계</span></div>
+                <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">안전 관련 구별 통계</span></div>
                 <div class="pull-right"></div>
                 <div class="clearfix"></div>
             </a>

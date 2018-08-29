@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="panel panel-default border-panel card-view">
+        <div class="panel-wrapper collapse in">
+            <div class="panel-body">
+                <div class="pills-struct mt-40">
+                    <ul role="tablist" class="nav nav-pills" id="myTabs_6">
+                        <li role="presentation" class="" id='trafficAcc'><a data-toggle="tab" id="profile_tab_1"
+                                                                            role="tab" href="#profile_6"
+                                                                            aria-expanded="false">교통사고</a></li>
+                        <li role="presentation" class="" id='traffAcc'><a data-toggle="tab" id="profile_tab_2"
+                                                                          role="tab" href="#profile_7"
+                                                                          aria-expanded="false">어린이보행자사고</a></li>
+                        <li role="presentation" class=""><a data-toggle="tab" id="profile_tab_3" role="tab"
+                                                            href="#profile_8" aria-expanded="false">유치원</a></li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent_6">
+                        <div id="profile_6" class="tab-pane fade" role="tabpanel">
+                            <div class="panel-body">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="panel panel-default border-panel card-view panel-refresh">
+                                    <div class="refresh-container">
+                                        <div class="la-anim-1"></div>
+                                    </div>
+                                    <div class="panel-heading">
+                                        <div class="pull-left">
+                                            <h6 class="panel-title txt-dark">아동 안전 지킴이집</h6>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="panel-wrapper collapse in">
+                                        <div class="panel-body">
+                                            <div id="e_chart_1" class="" style="height:650px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div id="profile_7" class="tab-pane fade" role="tabpanel">
+                            <div class="panel-body">
+{#                                <div id="e_chart_2" style="height:650px;"></div>#}
+                            </div>
+                        </div>
+                        <div id="profile_8" class="tab-pane fade" role="tabpanel">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block script %}
+    <script src="static/js/chart/echarts-en.min.js"></script>
+    <script src="static/js/chart/echarts-liquidfill.min.js"></script>
+    <script src="static/js/chart/data/echart-data2.js"></script>
+{% endblock script %}

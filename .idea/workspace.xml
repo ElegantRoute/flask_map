@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a0e7ccd4-6cec-486d-91b7-ba2773785dbd" name="Default Changelist" comment="last">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -175,20 +176,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+            <state relative-caret-position="390">
+              <caret line="26" column="102" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intro.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="intro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/intro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+            <state relative-caret-position="272">
+              <caret line="26" column="68" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="68" />
               <folding>
                 <element signature="e#1137#1161#0#HTML" expanded="true" />
                 <element signature="e#1289#1343#0#HTML" expanded="true" />
@@ -196,6 +197,15 @@
                 <element signature="e#1186#1213#0#HTML" expanded="true" />
                 <element signature="e#1178#1232#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="4371" column="23" selection-start-line="4371" selection-start-column="23" selection-end-line="4371" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -339,7 +349,6 @@
         <option value="$PROJECT_DIR$/templates/documentation.html" />
         <option value="$PROJECT_DIR$/templates/science.html" />
         <option value="$PROJECT_DIR$/static/js/init.js" />
-        <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/templates/echart3.html" />
         <option value="$PROJECT_DIR$/static/js/clutchWidgetsInit.js" />
         <option value="$PROJECT_DIR$/templates/tmap.html" />
@@ -348,9 +357,10 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/polygon.html" />
         <option value="$PROJECT_DIR$/templates/map.html" />
-        <option value="$PROJECT_DIR$/templates/nav.html" />
         <option value="$PROJECT_DIR$/static/js/chart/data/morris-data.js" />
         <option value="$PROJECT_DIR$/templates/intro.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/nav.html" />
       </list>
     </option>
   </component>
@@ -387,6 +397,12 @@
               <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask_map" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
@@ -680,7 +696,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535573146965</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="last">
+      <created>1535573184899</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535573184899</updated>
+    </task>
+    <task id="LOCAL-00022" summary="last">
+      <created>1535573905866</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1535573905866</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -699,11 +729,11 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932158" weight="0.3296582" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.506105" side_tool="true" visible="true" weight="0.4090408" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.493895" visible="true" weight="0.4090408" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.493895" visible="true" weight="0.4090408" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.496337" weight="0.3296582" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286219" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932158" weight="0.32685512" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49811321" visible="true" weight="0.14774115" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49811321" visible="true" weight="0.14774115" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4969475" weight="0.30540243" />
@@ -814,13 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" selection-start-line="11" selection-start-column="308" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -937,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/chart/data/morris-data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -953,8 +969,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/intro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+        <state relative-caret-position="272">
+          <caret line="26" column="68" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="68" />
           <folding>
             <element signature="e#1137#1161#0#HTML" expanded="true" />
             <element signature="e#1289#1343#0#HTML" expanded="true" />
@@ -962,6 +978,20 @@
             <element signature="e#1186#1213#0#HTML" expanded="true" />
             <element signature="e#1178#1232#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="4371" column="23" selection-start-line="4371" selection-start-column="23" selection-end-line="4371" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="102" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
         </state>
       </provider>
     </entry>

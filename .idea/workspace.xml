@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0e7ccd4-6cec-486d-91b7-ba2773785dbd" name="Default Changelist" comment="last">
-      <change afterPath="$PROJECT_DIR$/static/js/sweetalert/dropdown-bootstrap-extended.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sweetalert/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sweetalert/jquery.slimscroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sweetalert/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sweetalert/sweetalert-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sweetalert/sweetalert-dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sweetalert/sweetalert.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sweetalert/switchery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/e.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/echart3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/echart3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/polygon.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/polygon.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -157,8 +145,8 @@
       <file leaf-file-name="echart3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/echart3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="30">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -205,8 +193,8 @@
       <file leaf-file-name="intro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/intro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="21" />
+            <state relative-caret-position="354">
+              <caret line="125" column="77" lean-forward="true" selection-start-line="125" selection-start-column="70" selection-end-line="125" selection-end-column="77" />
               <folding>
                 <element signature="e#1137#1161#0#HTML" expanded="true" />
                 <element signature="e#1289#1343#0#HTML" expanded="true" />
@@ -253,7 +241,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gmap</find>
       <find>fixed-sidebar-left</find>
       <find>resize</find>
       <find>z-index</find>
@@ -283,9 +270,11 @@
       <find>car</find>
       <find>prod</find>
       <find>refre</find>
+      <find>#4dbcc5</find>
     </findStrings>
     <replaceStrings>
       <replace>/fonts/</replace>
+      <replace>#ff6028</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Programming\Project\pyCharm\Admintres\static\img</dir>
@@ -297,7 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/product-orders.html" />
         <option value="$PROJECT_DIR$/templates/product-detail.html" />
         <option value="$PROJECT_DIR$/templates/product-checkout.html" />
         <option value="$PROJECT_DIR$/templates/product-cart.html" />
@@ -347,6 +335,7 @@
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/e.html" />
         <option value="$PROJECT_DIR$/static/js/chart/data/echart-data2.js" />
+        <option value="$PROJECT_DIR$/static/css/classic.min.css" />
         <option value="$PROJECT_DIR$/templates/echart3.html" />
       </list>
     </option>
@@ -384,6 +373,12 @@
               <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask_map" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
@@ -715,7 +710,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535580167072</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="last">
+      <created>1535583511003</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1535583511003</updated>
+    </task>
+    <task id="LOCAL-00027" summary="last">
+      <created>1535583643296</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1535583643296</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -767,9 +776,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="last" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/icon/childPedestrianAccident.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/icon/childSafetyHouse.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -938,24 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/intro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="21" />
-          <folding>
-            <element signature="e#1137#1161#0#HTML" expanded="true" />
-            <element signature="e#1289#1343#0#HTML" expanded="true" />
-            <element signature="e#1130#1153#0#HTML" expanded="true" />
-            <element signature="e#1186#1213#0#HTML" expanded="true" />
-            <element signature="e#1178#1232#0#HTML" expanded="true" />
-            <element signature="e#6079#6102#0#HTML" expanded="true" />
-            <element signature="e#6380#6404#0#HTML" expanded="true" />
-            <element signature="e#6532#6586#0#HTML" expanded="true" />
-            <element signature="e#6760#6783#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1026,10 +1014,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="125" column="77" lean-forward="true" selection-start-line="125" selection-start-column="70" selection-end-line="125" selection-end-column="77" />
+          <folding>
+            <element signature="e#1137#1161#0#HTML" expanded="true" />
+            <element signature="e#1289#1343#0#HTML" expanded="true" />
+            <element signature="e#1130#1153#0#HTML" expanded="true" />
+            <element signature="e#1186#1213#0#HTML" expanded="true" />
+            <element signature="e#1178#1232#0#HTML" expanded="true" />
+            <element signature="e#6079#6102#0#HTML" expanded="true" />
+            <element signature="e#6380#6404#0#HTML" expanded="true" />
+            <element signature="e#6532#6586#0#HTML" expanded="true" />
+            <element signature="e#6760#6783#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/classic.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="535" lean-forward="true" selection-start-column="535" selection-end-column="535" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/echart3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>

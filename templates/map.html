@@ -341,7 +341,7 @@
         var marker_s1, marker_s2, markerStartLayer, markerEndLayer, s1_lon, s1_lat, s1_pix, s2_lon, s2_lat, s2_pix,
             kmlForm, s3_lon, s3_lat, s3_pix, search1_y, search1_x, search2_x, search2_y;
         var my_lat, my_lon;
-        var pointFeature = new Array();
+        var pointFeature = [];
         var markerCluster;
         var schoolZonecounter = 0;
         var constructioncounter = 0;
@@ -432,7 +432,7 @@
         map.addLayers([center_layer]); // 지도에 백터 레이어 추가
         var sel = document.getElementById("sel");
         var val = sel.options[sel.selectedIndex].value;
-        var state = true
+        var state = true;
         document.getElementById("Tmap_Map_7_Tmap_Container").onmouseup = function () {
             mouseUp(val)
         };
@@ -550,11 +550,11 @@
                 deletemarker();
 
 
-                var positions = new Array();
+                var positions = [];
 
                 for (var i = 0; i < mark10.length; i++) {
-                    temp_lat = mark10[i]['lat']
-                    temp_lon = mark10[i]['lng']
+                    temp_lat = mark10[i]['lat'];
+                    temp_lon = mark10[i]['lng'];
                     var d = calculateDistance(temp_lat, temp_lon, center_temp.lat, center_temp.lon);
                     if (val * 0.001 > d) {
                         positions.push({
@@ -565,11 +565,7 @@
                         });
 
                     }
-                    ;
                 }
-                ;
-
-
                 var size = new Tmap.Size(17, 17);//아이콘 크기
                 var offset = new Tmap.Pixel(-(size.w / 2), -(size.h));//아이콘 중심점
                 counterinit();
@@ -879,10 +875,10 @@
                 document.getElementById("second").style.display = "block";
                 search1_x = data[0]['x'];
                 search1_y = data[0]['y'];
-                console.log(search1_x)
-                console.log(search1_y)
-                s1_lon = search1_x
-                s1_lat = search1_y
+                console.log(search1_x);
+                console.log(search1_y);
+                s1_lon = search1_x;
+                s1_lat = search1_y;
                 routeLayer.removeFeatures(kmlForm);
                 pointLayer.removeAllFeatures();
                 vector_layer.removeAllFeatures();
@@ -908,12 +904,12 @@
             } else if (status === daum.maps.services.Status.ZERO_RESULT) {
 
                 alert('검색 결과가 존재하지 않습니다.');
-                return;
+
 
             } else if (status === daum.maps.services.Status.ERROR) {
 
                 alert('검색 결과 중 오류가 발생했습니다.');
-                return;
+
 
             }
         }
@@ -930,9 +926,9 @@
                 document.getElementById("myCheck").value = 0;
                 state = false;
                 start(val);
-
-                s2_lat = search2_y
-                s2_lon = search2_x
+                document.getElementById("predict").style.display = "block"; // predict div 생성
+                s2_lat = search2_y;
+                s2_lon = search2_x;
                 markerEndLayer = new Tmap.Layer.Markers("end");//마커 레이어 생성
                 map.addLayer(markerEndLayer);//map에 마커 레이어 추가
 
@@ -1008,7 +1004,7 @@
                             strokeDashstyle: "solid",
                             pointRadius: 2,
                             title: "this is a red line"
-                        }
+                        };
                         kmlForm = new Tmap.Format.KML().read(prtcl);
                         routeLayer.addFeatures(kmlForm);
 
@@ -1023,11 +1019,11 @@
                         var mark10 = {{ mark | tojson | safe }};
                         var coord = new Tmap.LonLat(s3_lon, s3_lat).transform("EPSG:4326", "EPSG:3857");
                         var circle = new Tmap.Geometry.Circle(coord.lon, coord.lat, s3_pix + 100); // 원 생성
-                        var positions = new Array();
+                        var positions = [];
 
                         for (var i = 0; i < mark10.length; i++) {
-                            temp_lat = mark10[i]['lat']
-                            temp_lon = mark10[i]['lng']
+                            temp_lat = mark10[i]['lat'];
+                            temp_lon = mark10[i]['lng'];
                             var d = calculateDistance(temp_lat, temp_lon, s3_lat, s3_lon);
                             if (s3_pix * 0.001 > d * 1.3) {
 
@@ -1039,11 +1035,7 @@
                                 });
 
                             }
-                            ;
                         }
-                        ;
-
-
                         var size = new Tmap.Size(12, 20);//아이콘 크기
                         var offset = new Tmap.Pixel(-(size.w / 2), -(size.h));//아이콘 중심점
                         counterinit();
@@ -1137,12 +1129,12 @@
             } else if (status === daum.maps.services.Status.ZERO_RESULT) {
 
                 alert('검색 결과가 존재하지 않습니다.');
-                return;
+
 
             } else if (status === daum.maps.services.Status.ERROR) {
 
                 alert('검색 결과 중 오류가 발생했습니다.');
-                return;
+
 
             }
         }

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a0e7ccd4-6cec-486d-91b7-ba2773785dbd" name="Default Changelist" comment="last">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/billiard.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/billiard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/cctv.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/cctv.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/childPedestrianAccident.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/childPedestrianAccident.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/map.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/flask_map_master$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535523464208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_map$Flask__app_py___1_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535584592597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_map$Flask__app_py___1_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535586320418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask$Admintres.coverage" NAME="Admintres Coverage Results" MODIFIED="1535430527496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Admintres$Admintres.coverage" NAME="Admintres Coverage Results" MODIFIED="1535429559298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535523981428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -154,8 +157,8 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1509">
-              <caret line="725" column="53" selection-start-line="725" selection-start-column="38" selection-end-line="725" selection-end-column="53" />
+            <state relative-caret-position="430">
+              <caret line="140" column="30" lean-forward="true" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -167,11 +170,6 @@
               <caret line="771" column="31" selection-start-line="771" selection-start-column="31" selection-end-line="771" selection-end-column="31" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cctv.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/icon/cctv.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="init.js" pinned="false" current-in-tab="false">
@@ -224,15 +222,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="science.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/science.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -246,8 +235,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>block</find>
-      <find>title</find>
       <find>fullsc</find>
       <find>chat</find>
       <find>Fullscreen</find>
@@ -273,9 +260,11 @@
       <find>#4dbcc5</find>
       <find>border</find>
       <find>childSafe</find>
-      <find>childSafetyZone</find>
-      <find>menu_selected_bad</find>
       <find>childsafetyzone</find>
+      <find>changeMarker('childSafetyZone')</find>
+      <find>menu_selected_bad</find>
+      <find>childSafetyHouse</find>
+      <find>childSafetyZone</find>
     </findStrings>
     <replaceStrings>
       <replace>/fonts/</replace>
@@ -354,9 +343,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="159" />
+    <option name="y" value="213" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
@@ -451,11 +440,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/icon" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/static/css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/js" />
@@ -769,7 +758,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535584086678</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="last">
+      <created>1535584953599</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1535584953599</updated>
+    </task>
+    <task id="LOCAL-00033" summary="last">
+      <created>1535585200196</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1535585200196</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -782,17 +785,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1680" height="1027" extended-state="6" />
-    <editor active="true" />
+    <frame x="824" y="724" width="1680" height="1027" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932158" weight="0.3296582" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50671554" side_tool="true" visible="true" weight="0.4090408" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4932845" visible="true" weight="0.4090408" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4932845" visible="true" weight="0.4090408" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.496337" weight="0.3296582" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286219" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932158" weight="0.32685512" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49811321" visible="true" weight="0.14774115" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49811321" visible="true" weight="0.14774115" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.496337" weight="0.30540243" />
@@ -821,9 +823,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="last" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/icon/childSafetyZone.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/icon/construction.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1084,10 +1083,13 @@
     <entry file="file://$PROJECT_DIR$/static/icon/cctv.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/billiard.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1509">
-          <caret line="725" column="53" selection-start-line="725" selection-start-column="38" selection-end-line="725" selection-end-column="53" />
+        <state relative-caret-position="430">
+          <caret line="140" column="30" lean-forward="true" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
         </state>
       </provider>
     </entry>

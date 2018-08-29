@@ -14,6 +14,13 @@
             </a>
         </li>
         <li>
+            <a href="{{ url_for('gis') }}">
+                <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">서울시 구별 안전 관련 통계</span></div>
+                <div class="pull-right"></div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+        <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr">
                 <div class="pull-left"><i class="ti-bar-chart  mr-20"></i><span class="right-nav-text">분석</span></div>
                 <div class="pull-right"><i class="ti-angle-down"></i></div>
@@ -22,9 +29,6 @@
             <ul id="ecom_dr" class="collapse collapse-level-1">
                 <li>
                     <a href="{{ url_for('analysis') }}">안전등급 분석</a>
-                </li>
-                <li>
-                    <a href="{{ url_for('gis') }}">서울시 구별 통계</a>
                 </li>
                 <li>
                     <a href="{{ url_for('eda') }}">서울시 요소별 통계</a>

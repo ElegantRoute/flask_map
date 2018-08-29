@@ -148,6 +148,7 @@
 
 {% block content %}
     <div class="row">
+        <button id="run" type="button" class="btn btn-custom my-first-tour">Run Tour</button>
         <div class="col-lg-12">
             <div id="w1" class="cpanel" data-cw-expand="true">
                 <div class="cpanel-body" style="padding-left: 100px;">
@@ -1177,4 +1178,71 @@
             }).open();
         }
     </script>
+    <script type="text/javaScript">
+  $(function(){
+    $('#run.my-first-tour').on('click', function() {
+      $.ptJs({
+        autoStart: true,
+        steps: [
+            {
+            el: '#map_div',
+            templateData: {
+                title: '지도',
+              content: '현재위치와 검색결과가 나타납니다.'
+            }
+          },
+          {
+            el: '#search',
+            templateData: {
+                title: '길찾기',
+              content: ' 출발지를 입력하면 도착지 입력화면이 나타납니다.'
+            }
+          },
+          {
+            el: '#category1',
+            templateData: {
+                title: '반경설정',
+              content: '반경 몇 km까지 보여줄지 설정하는 부분입니다.'
+            }
+          },
+          {
+            el: '#category2',
+            templateData: {
+                title: '안전등급',
+              content: '현재 보고있는 위치의 안전등급을 보여줍니다. on/off가 가능합니다.'
+            }
+          },
+          {
+            el: '#category3',
+            templateData: {
+                title: '현위치 검색',
+              content: '자신의 현재위치로 이동합니다.'
+            }
+          },
+                      {
+            el: '#category',
+            templateData: {
+                title: '필터',
+              content: '아이콘 위에 마우스 커서를 올리면 해당 아이콘의 이름을 보여줍니다. 또한 클릭하여 지도에서 안보이게 할 수 있습니다.'
+            }
+          },
+                      {
+            el: '#category_num',
+            templateData: {
+                title: '위험&안전요소 확인',
+              content: '원 안에 각각 몇개의 마커들이 있는지 보여줍니다.'
+            }
+          },
+            {
+            el: '#predict',
+            templateData: {
+                title: '안전등급 확인',
+              content: '등급은 "안전", "주의", "위험" 3단계로 나누어집니다.'
+            }
+          }
+        ]
+      });
+    });
+  });
+</script>
 {% endblock script %}

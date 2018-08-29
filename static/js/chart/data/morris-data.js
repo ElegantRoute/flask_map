@@ -246,7 +246,7 @@ $(function() {
 			}],
 			xkey: 'device',
 			ykeys: ['geekbench'],
-			labels: ['Geekbench'],
+			labels: ['건수'],
 			barRatio: 0.4,
 			xLabelAngle: 35,
 			pointSize: 1,

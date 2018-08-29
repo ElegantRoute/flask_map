@@ -22,24 +22,24 @@
             <div class="panel panel-default border-panel card-view" id ='mapborder'>
                 <div class="panel-heading">
                     <div class="pull-left">
-                        <h5 id="result11">서울시 지도 (지도를 눌러보세요!)</h5>
+                        <h5 id="result11">서울시 지도 <button id="run" type="button" class="btn btn-default btn-icon-anim btn-circle btn-sm help" style="display: inline"><i class="fa fa-question"></i></button></h5>
                     </div>
                     <div class="clearfix"></div>
                 </div>
                 <div class="panel-wrapper collapse in">
                     <div class="panel-body">
-                        <div id="map" style="width:100%; height:560px;"></div>
+                        <div id="map" style="width:100%; height:600px;"></div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-6">
-            <div class="panel panel-default border-panel card-view" style="height:646px" id="chartborder">
+            <div class="panel panel-default border-panel card-view" style="height:690px" id="chartborder">
                 <div class="panel-heading">
                     <div class="pull-left">
                         <div class="panel-title txt-dark">
-                            <h5 id="result">구별 통계</h5>
+                            <h5 id="result">구별 통계 <button id="run" type="button" class="btn btn-default btn-icon-anim btn-circle btn-sm help" style="display: inline"><i class="fa fa-question"></i></button></h5>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -51,7 +51,6 @@
                 </div>
             </div>
         </div>
-        <button id="run" type="button">도움말</button>
     </div>
 
 {% endblock content %}

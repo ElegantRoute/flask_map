@@ -298,7 +298,7 @@ $(function() {
         }],
         xkey: 'period',
         ykeys: ['under13age'],
-        labels: ['under13age'],
+        labels: ['건수'],
         pointSize: 2,
         fillOpacity: 0,
 		lineWidth:2,

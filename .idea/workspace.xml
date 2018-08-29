@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a0e7ccd4-6cec-486d-91b7-ba2773785dbd" name="Default Changelist" comment="last">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/chart/data/morris-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/chart/data/morris-data.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/flask_map_master$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535523464208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_map$Flask__app_py___1_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535572968630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_map$Flask__app_py___1_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535573105430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask$Admintres.coverage" NAME="Admintres Coverage Results" MODIFIED="1535430527496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Admintres$Admintres.coverage" NAME="Admintres Coverage Results" MODIFIED="1535429559298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535523981428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -185,17 +185,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intro.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="intro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/intro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="257">
+              <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
               <folding>
                 <element signature="e#1137#1161#0#HTML" expanded="true" />
                 <element signature="e#1289#1343#0#HTML" expanded="true" />
+                <element signature="e#1130#1153#0#HTML" expanded="true" />
                 <element signature="e#1186#1213#0#HTML" expanded="true" />
                 <element signature="e#1178#1232#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="morris-data.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/chart/data/morris-data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="300" column="20" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -256,9 +266,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>static/img/intr</find>
-      <find>Roboto</find>
-      <find>perfect-scrollbar</find>
       <find>dist/assets/owl.carousel.min.css</find>
       <find>perfect-scrollbar.min.css</find>
       <find>/dist/fonts/</find>
@@ -286,6 +293,9 @@
       <find>button</find>
       <find>CCTV</find>
       <find>predict</find>
+      <find>Gi</find>
+      <find>Geekben</find>
+      <find>Geek</find>
     </findStrings>
     <replaceStrings>
       <replace>/fonts/</replace>
@@ -300,7 +310,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/menu-top.html" />
         <option value="$PROJECT_DIR$/templates/modals.html" />
         <option value="$PROJECT_DIR$/templates/nestable.html" />
         <option value="$PROJECT_DIR$/templates/jsgrid-table.html" />
@@ -351,6 +360,7 @@
         <option value="$PROJECT_DIR$/templates/map.html" />
         <option value="$PROJECT_DIR$/templates/nav.html" />
         <option value="$PROJECT_DIR$/templates/intro.html" />
+        <option value="$PROJECT_DIR$/static/js/chart/data/morris-data.js" />
       </list>
     </option>
   </component>
@@ -393,6 +403,27 @@
               <item name="flask_map" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="chart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="chart" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
@@ -638,7 +669,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535572383282</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="last">
+      <created>1535572982892</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1535572982892</updated>
+    </task>
+    <task id="LOCAL-00019" summary="last">
+      <created>1535573085092</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1535573085092</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -743,9 +788,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/chart/data/chartjs-data.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/chart/data/morris-data.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/filter.css" />
@@ -907,14 +949,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/intro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="257">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
           <folding>
             <element signature="e#1137#1161#0#HTML" expanded="true" />
             <element signature="e#1289#1343#0#HTML" expanded="true" />
+            <element signature="e#1130#1153#0#HTML" expanded="true" />
             <element signature="e#1186#1213#0#HTML" expanded="true" />
             <element signature="e#1178#1232#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/chart/data/morris-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="300" column="20" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
         </state>
       </provider>
     </entry>

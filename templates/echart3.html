@@ -1,112 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>우리아이 안전한 길</title>
-    <meta name="description" content="Admintres is a Dashboard & Admin Site Responsive Template by hencework." />
-    <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Admintres Admin, Admintresadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
-    <meta name="author" content="hencework"/>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Data table CSS -->
-    <link href="static/vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
-    <link href="static/vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom CSS -->
-    <link href="static/dist/css/style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-<!-- Preloader -->
-<div class="preloader-it">
-    <div class="la-anim-1"></div>
-</div>
-<!-- /Preloader -->
-<div class="wrapper theme-2-active navbar-top-light">
-    <!-- Top Menu Items -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="height: 100px;">
-        <div class="nav-wrap">
-            <div class="mobile-only-brand pull-left" style="height:100px;">
-                <div class="nav-header pull-left" style="height:100px;padding-left:10px">
-                    <div class="logo-wrap" style="padding: 10px 0 0 0;">
-                        <a href="/">
-                            <img class="brand-img" src="static/icon/logo.png" style="height: 60px;width:46px;padding-bottom:20px;padding-right:10px" alt="brand"/>
-                            <span class="brand-text"><img style="height: 80px; "  src="static/icon/logo3.png" alt="brand"/></span>
-                        </a>
-                    </div>
-                </div>
-                <a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="ti-align-left"></i></a>
-            </div>
-
-        </div>
-    </nav>
-    <!-- /Top Menu Items -->
-
-    <!-- Left Sidebar Menu -->
-    <div class="fixed-sidebar-left">
-        <ul class="nav navbar-nav side-nav nicescroll-bar">
-            <li class="navigation-header" style="padding: 50px 0 0 0;">
-            </li>
-            <li>
-                <a href="{{ url_for('map') }}"><div class="pull-left"><i class="ti-map-alt mr-20"></i><span class="right-nav-text">우아한 길</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
-            </li>
-            <li>
-                <a href="{{ url_for('documentation') }}"><div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">소개글</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><div class="pull-left"><i class="ti-bar-chart  mr-20"></i><span class="right-nav-text">분석</span></div><div class="pull-right"><i class="ti-angle-down"></i></div><div class="clearfix"></div></a>
-                <ul id="ecom_dr" class="collapse collapse-level-1">
-                    <li>
-                        <a href="{{ url_for('dataScience') }}">안전등급 분석</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('polygon') }}">서울시 구별 통계</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('echart') }}">서울시 요소별 통계</a>
-                    </li>
-                </ul>
-            </li>
-
-
-        </ul>
-    </div>
-    <!-- /Left Sidebar Menu -->
-
-    <!-- Right Sidebar Menu -->
-    <div class="fixed-sidebar-right">
-        <ul class="right-sidebar">
-            <li>
-                <div  class="tab-struct custom-tab-1">
-                    <ul role="tablist" class="nav nav-tabs" id="right_sidebar_tab">
-                        <li class="active" role="presentation"><a aria-expanded="true"  data-toggle="tab" role="tab" id="chat_tab_btn" href="#chat_tab">chat</a></li>
-                        <li role="presentation" class=""><a  data-toggle="tab" id="messages_tab_btn" role="tab" href="#messages_tab" aria-expanded="false">messages</a></li>
-                        <li role="presentation" class=""><a  data-toggle="tab" id="todo_tab_btn" role="tab" href="#todo_tab" aria-expanded="false">todo</a></li>
-                    </ul>
-                    <div class="tab-content" id="right_sidebar_content">
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <!-- /Right Sidebar Menu -->
-
-    <!-- Main Content -->
-    <div class="page-wrapper">
-        <div class="container">
-            <!-- Title -->
+{% extends 'base.html' %}
+{% block content %}
             <div class="row heading-bg">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                     <h5 class="txt-dark">서울시 요소별 통계</h5>
                 </div>
             </div>
-            <!-- /Title -->
-
-            <!-- Row -->
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="panel panel-default border-panel card-view panel-refresh">
@@ -427,77 +325,10 @@
                     </div>
                 </div>
             </div>
-            <!-- /Row -->
-        </div>
-        {#			#}
-        {#			<!-- Footer -->#}
-        {#			<footer class="footer pl-30 pr-30">#}
-        {#				<div class="container">#}
-        {#					<div class="row">#}
-        {#						<div class="col-sm-6">#}
-        {#							<p>2018 &copy; Admintres. Pampered by Hencework</p>#}
-        {#						</div>#}
-        {#						<div class="col-sm-6 text-right">#}
-        {#							<p>Follow Us</p>#}
-        {#							<a href="#"><i class="fa fa-facebook"></i></a>#}
-        {#							<a href="#"><i class="fa fa-twitter"></i></a>#}
-        {#							<a href="#"><i class="fa fa-google-plus"></i></a>#}
-        {#						</div>#}
-        {#					</div>#}
-        {#				</div>#}
-        {#			</footer>#}
-        <!-- /Footer -->
-    </div>
-</div>
-<!-- /Main Content -->
+{% endblock content %}
 
-<!-- /#wrapper -->
-
-<!-- JavaScript -->
-
-<!-- jQuery -->
-<script src="static/vendors/bower_components/jquery/dist/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="static/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!-- Data table JavaScript -->
-<script src="static/vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-
-<!-- Slimscroll JavaScript -->
-<script src="static/dist/js/jquery.slimscroll.js"></script>
-
-<!-- simpleWeather JavaScript -->
-<script src="static/vendors/bower_components/moment/min/moment.min.js"></script>
-<script src="static/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
-<script src="static/dist/js/simpleweather-data.js"></script>
-
-<!-- Progressbar Animation JavaScript -->
-<script src="static/vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-<script src="static/vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
-
-<!-- Fancy Dropdown JS -->
-<script src="static/dist/js/dropdown-bootstrap-extended.js"></script>
-
-<!-- Sparkline JavaScript -->
-<script src="static/vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
-
-<!-- Owl JavaScript -->
-<script src="static/vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-
-<!-- Toast JavaScript -->
-<script src="static/vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
-
-<!-- EChartJS JavaScript -->
-<script src="static/vendors/bower_components/echarts/dist/echarts-en.min.js"></script>
-<script src="static/vendors/echarts-liquidfill.min.js"></script>
-
-<!-- Switchery JavaScript -->
-<script src="static/vendors/bower_components/switchery/dist/switchery.min.js"></script>
-
-<!-- Init JavaScript -->
-<script src="static/dist/js/init.js"></script>
-<script src="static/dist/js/echart-data2.js"></script>
-</body>
-
-</html>
+{% block script %}
+    <script src="static/js/chart/echarts-en.min.js"></script>
+    <script src="static/js/chart/echarts-liquidfill.min.js"></script>
+    <script src="static/js/chart/data/echart-data2.js"></script>
+{% endblock script %}

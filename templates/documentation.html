@@ -1,1129 +1,221 @@
+{% extends 'base.html' %}
+{% block pre_style %}
+    <link rel="stylesheet" href="static/css/morris.css" >
+{% endblock pre_style %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>우리아이 안전한 길</title>
-	<meta name="description" content="Admintres is a Dashboard & Admin Site Responsive Template by hencework." />
-	<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Admintres Admin, Admintresadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
-	<meta name="author" content="hencework"/>
-	
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<!-- Morris Charts CSS -->
-    <link href="static/vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
-	<!-- Custom CSS -->
-	<link href="static/dist/css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
-	<link href="static/dist/css/style.css" rel="stylesheet" type="text/css">
-	
-</head>
-
-<body>
-	<!--Preloader-->
-	<div class="preloader-it">
-		<div class="la-anim-1"></div>
-	</div>
-	<!--/Preloader-->
-    <div class="wrapper theme-2-active navbar-top-light">
-    <!-- Top Menu Items -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="height: 100px;">
-        <div class="nav-wrap">
-            <div class="mobile-only-brand pull-left" style="height:100px;">
-                <div class="nav-header pull-left" style="height:100px;padding-left:10px">
-                    <div class="logo-wrap" style="padding: 10px 0 0 0;">
-                        <a href="/">
-                            <img class="brand-img" src="static/icon/logo.png" style="height: 60px;width:46px;padding-bottom:20px;padding-right:10px" alt="brand"/>
-                            <span class="brand-text"><img style="height: 80px; "  src="static/icon/logo3.png" alt="brand"/></span>
-                        </a>
-                    </div>
-                </div>
-                <a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="ti-align-left"></i></a>
+{% block content %}
+        <div class="row heading-bg">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                {#						<h3 class="txt-dark" style="font-weight: bold;">소개</h3>#}
             </div>
-
         </div>
-    </nav>
-    <!-- /Top Menu Items -->
-			
-    <!-- Left Sidebar Menu -->
-    <div class="fixed-sidebar-left">
-        <ul class="nav navbar-nav side-nav nicescroll-bar">
-            <li class="navigation-header" style="padding: 50px 0 0 0;">
-            </li>
-            <li>
-                <a href="{{ url_for('map') }}"><div class="pull-left"><i class="ti-map-alt mr-20"></i><span class="right-nav-text">우아한 길</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
-            </li>
-            <li>
-                <a href="{{ url_for('documentation') }}"><div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">소개글</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><div class="pull-left"><i class="ti-bar-chart  mr-20"></i><span class="right-nav-text">분석</span></div><div class="pull-right"><i class="ti-angle-down"></i></div><div class="clearfix"></div></a>
-                <ul id="ecom_dr" class="collapse collapse-level-1">
-                    <li>
-                        <a href="{{ url_for('dataScience') }}">안전등급 분석</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('polygon') }}">서울시 구별 통계</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('echart') }}">서울시 요소별 통계</a>
-                    </li>
-                </ul>
-            </li>
-
-
-        </ul>
-    </div>
-    <!-- /Left Sidebar Menu -->
-			
-    <!-- Right Sidebar Menu -->
-    <div class="fixed-sidebar-right">
-        <ul class="right-sidebar">
-            <li>
-                <div  class="tab-struct custom-tab-1">
-                    <ul role="tablist" class="nav nav-tabs" id="right_sidebar_tab">
-                        <li class="active" role="presentation"><a aria-expanded="true"  data-toggle="tab" role="tab" id="chat_tab_btn" href="#chat_tab">chat</a></li>
-                        <li role="presentation" class=""><a  data-toggle="tab" id="messages_tab_btn" role="tab" href="#messages_tab" aria-expanded="false">messages</a></li>
-                        <li role="presentation" class=""><a  data-toggle="tab" id="todo_tab_btn" role="tab" href="#todo_tab" aria-expanded="false">todo</a></li>
-                    </ul>
-                    <div class="tab-content" id="right_sidebar_content">
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <!-- /Right Sidebar Menu -->
-				
-			
-        
-		<!-- Main Content -->
-		<div class="page-wrapper">
-            <div class="container">
-				
-				<!-- Title -->
-				<div class="row heading-bg">
-					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-{#						<h3 class="txt-dark" style="font-weight: bold;">소개</h3>#}
-					</div>
-
-				</div>
-				<!-- /Title -->
-				
-				<!-- Row -->
-				<div class="row">
-					<div class="col-sm-12">
-						 <div class="panel panel-default card-view">
-							<div class="panel-heading">
-								<div class="pull-left">
-{#									<h6 class="panel-title txt-dark">서울시 어린이 안전 공간 시스템</h6>#}
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="panel-wrapper collapse in">
-								<div class="panel-body">
-                                    <img src="static/img/intro/temp.png" width="100%" height="30%" style=" display:block; margin-left:auto; margin-right:auto;">
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /Row -->
-				
-				<!-- Row -->
-				<div class="row">
-					<div class="col-sm-12">
-{#						 <div class="panel panel-default card-view">#}
-							<div >
-                                <br>
-                                <h3 class="txt-dark" style="text-align:center;font-weight: bold;margin-top:10px;">추진 배경 및 목적</h3>
-                                <br></br>
-								<div class="clearfix"></div>
-							</div>
-                    </div>
-                </div>
-
-                <div class="row">
-        			  	<div class="col-lg-6">
-						<div class="panel panel-default border-panel card-view">
-							<div class="panel-heading">
-								<div class="pull-left">
-									<h6 class="panel-title txt-dark">사망원인에 따른 어린이 사망자수(2014-2016년)</h6>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="panel-wrapper collapse in">
-								<div class="panel-body">
-									<div id="morris_bar_chart" class="morris-chart"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-                    <div class="col-lg-6 ">
-                        <div class="panel panel-default border-panel card-view">
-                            <div class="panel-heading">
-                                <div class="pull-left">
-                                    <h6 class="panel-title txt-dark">어린이 교통사고 사망자 유형별 비율</h6>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="panel-wrapper collapse in">
-                                <div class="panel-body">
-                                    <canvas id="chart_8" height="175"></canvas>
-                                </div>
-                            </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default card-view">
+                    <div class="panel-heading">
+                        <div class="pull-left">
+                            {#									<h6 class="panel-title txt-dark">서울시 어린이 안전 공간 시스템</h6>#}
                         </div>
+                        <div class="clearfix"></div>
                     </div>
-				</div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                        <div class="panel panel-default border-panel card-view">
-                            <div class="panel-heading">
-                                <div class="pull-left">
-                                    <h6 class="panel-title txt-dark">자녀의 안전에서 가장 우려되는 부분</h6>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="panel-wrapper collapse in">
-                                <div class="panel-body">
-                                    <canvas id="chart_6" height="165"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-					<div class="col-lg-6">
-						<div class="panel panel-default border-panel card-view">
-							<div class="panel-heading">
-								<div class="pull-left">
-									<h6 class="panel-title txt-dark">아동대상 성범죄 발생 건수 추이(2006-2015년)</h6>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="panel-wrapper collapse in">
-								<div id="morris_extra_line_chart" class="morris-chart"></div>
-							</div>
-						</div>
-					</div>
+                    <div class="panel-wrapper collapse in">
+                        <div class="panel-body">
+                            <img src="static/img/intro/temp.png" width="100%" height="30%"
+                                 style=" display:block; margin-left:auto; margin-right:auto;">
 
-                </div>
-                <div class="row">
-					<div class="col-sm-12">
-						 <div class="">
-							<div class="panel-wrapper collapse in">
-								<div class="pull-left">
-   								   <p class="muted"> 최근 어린이집 폭행, 어린이 유괴 미수, 어린이 성범죄 증가 등 어린이에 대한 각종 범죄와 사고들로 어린이의 안전에 대한 관심이 높아지고 있습니다. 이에 스스로를 지킬 수 있는 판단력과 신체적 조건이 부족하여 보호가 필요한 어린이의 안전에 관한 시스템을 제안하였습니다.<br>통계청이 공개한 보고서 ‘사고에 의한 어린이 사망:1996~2016년’을 보면 2014~2016년 3년 동안 비의도적 사고로 숨진 만 14세 이하 어린이 중 42.5%가 운수사고로 인해 사망하였고, 이중 43.7%가 보행 중 사고를 당한 것으로 집계되었습니다. 이에 매일 등하교를 하는 자녀를 둔 부모들의 걱정이 클 것이라고 생각하였습니다.<br>
-                                       또한 통계청에서 뽑은 <자녀의 안전에서 가장 우려되는 부분 1순위>결과 교통사고 30.8%, 성범죄 17.5%로 1,2위를 차지하고 있었고, 2016년 경찰청의 범죄분석에 따르면 2006~2015년까지 만 13세 미만을 대상으로 한 성범죄의 수가 증가 추세를 보이고 있습니다. 이런 결과에 따라 본 프로젝트에서는 사망원인 1위이자 걱정거리 1위인 교통사고와 지속적으로 이슈화 되고 증가하고 있는 성범죄 데이터를 아이들의 안전을 판단할 수 있는 요소로 지정하였습니다.<br>
-                                   이를 토대로 보호자와 아동 스스로가 범죄나 사고에 취약한 물리적 환경을 판별하고 이를 회피하게 함으로써 범죄 혹은 사고 노출 기회를 감소시키기 위함에 있습니다.</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-                         </div>
-                    </div>
-                </div>
-                <div class="row">
-					<div class="col-sm-12">
-{#						 <div class="panel panel-default card-view">#}
-							<div >
-                                <br>
-                                <h3 class="txt-dark" style="text-align:center;font-weight: bold;margin-top:10px;">배경 지식</h3>
-                                <br></br>
-								<div class="clearfix"></div>
-							</div>
-                    </div>
-                </div>
-                 <div class="row">
-					<div class="col-sm-12">
-						 <div class="panel panel-default border-panel card-view">
-							<div class="panel-wrapper collapse in">
-                                <div>
-                                    <img src="static/img/intro/chikno.png" style="width:70%;height:40%;display:block;margin-left:auto;margin-right:auto;">
-                                </div>
-								<div class="clearfix"></div>
-							</div>
-                         </div>
-                    </div>
-                </div>
-                <div class="row">
-					<div class="col-sm-12">
-{#						 <div class="panel panel-default card-view">#}
-							<div >
-                                <br>
-                                <h3 class="txt-dark" style="text-align:center;font-weight: bold;margin-top:10px;">기능</h3>
-                                <br></br>
-								<div class="clearfix"></div>
-							</div>
-                    </div>
-                </div>
-                 <div class="row">
-					<div class="col-sm-12">
-						 <div class="panel panel-default border-panel card-view">
-							<div class="panel-wrapper collapse in" style="">
-                                <div style="display:block;margin-left:auto;margin-right:auto;">
-                                <span>
-                                     <img src="static/img/intro/f1.png" style="width:20%;height:30%;margin-left:6%;margin-right:2.5%;">
-                                </span>
-                                   <span>
-                                     <img src="static/img/intro/f2.png" style="width:20%;height:30%;margin-left:auto;margin-right:2.5%;">
-                                </span>
-                                <span>
-                                     <img src="static/img/intro/f3.png" style="width:20%;height:30%;margin-left:auto;margin-right:2.5%;">
-                                </span>
-                                <span>
-                                     <img src="static/img/intro/f4.png" style="width:20%;height:30%;margin-left:auto;margin-right:5%;">
-                                </span>
-                                </div>
-								<div class="clearfix"></div>
-							</div>
-                         </div>
-                    </div>
-                </div>
-                   <div class="row">
-					<div class="col-sm-12">
-						 <div class="">
-							<div class="panel-wrapper collapse in">
-								<div class="pull-left">
-                                    <p class="muted">
-                                        <ul>
-                                    <li>경로안내 기능 : 경로안내 기능으로 최단 경로를 알 수 있게 하고, 출발지와 목적지의 중심점으로부터의 반경 내의 안전요소와 위험 요소를 알려준다.</li>
-                                    <li>안전요소(총 9개) : 어린이보호구역, 경찰서, 초등학교, 유치원, 어린이집, 어린이놀이시설, 아동복지시설, CCTV,아동안전지킴이집,</li>
-                                    <li>위험요소(총 7개) : 교통사고, 어린이보행자사고, 스쿨존내교통사고, 공사진행현황, 유흥업소, 숙박업소, 당구장</li>
-                                    <li>안전등급 : 현재 위치 또는 선택한 위치의 반경 내 위험요소와 안전요소를 분석하여 위험등급을 3단계로 표시한다.<br></li>
-                                </ul>
-                                    </p>
-                                </div>
-								<div class="clearfix"></div>
-							</div>
-                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-{#				<!-- /Row -->#}
-{#				#}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{##}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<pre class="pt-20">#}
-{##}
-{#									  </pre>#}
-{#            					</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">Html structure</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#								  <pre class="pt-20">#}
-{#									&lt;html&gt;#}
-{#										&lt;body&gt;#}
-{##}
-{#										<span style="color:#ccc;">&lt;!-- Preloader --&gt;</span>#}
-{#										&lt;div class="preloader-it"&gt;#}
-{#										&lt;div class="la-anim-1"&gt;&lt;/div&gt;#}
-{#										&lt;/div&gt;#}
-{#										<span style="color:#ccc;">!-- /Preloader --&gt;</span>#}
-{##}
-{#										<span style="color:#ccc;">&lt;!-- Wrapper --&gt;</span>#}
-{#										&lt;div id="wrapper"&gt;#}
-{#											&lt;!-- Top Menu Items --&gt;#}
-{#											&lt;nav class="navbar navbar-inverse navbar-fixed-top"&gt;#}
-{#											------#}
-{#											&lt;!-- Left Sidebar Menu --&gt;#}
-{#											&lt;div class="fixed-sidebar-left"&gt;#}
-{#											------#}
-{##}
-{#											&lt;!-- Right Sidebar Menu --&gt;#}
-{#											&lt;div class="fixed-sidebar-right"&gt;#}
-{#											------#}
-{##}
-{#											&lt;!-- Main Content --&gt;#}
-{#											&lt;div class="page-wrapper"&gt;#}
-{##}
-{#												&lt;!-- Title --&gt;#}
-{#												&lt;div class="row heading-bg"&gt;#}
-{#													------#}
-{#													&lt;!-- Breadcrumb --&gt;#}
-{#													&lt;div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"&gt;#}
-{#														------#}
-{#													--content--#}
-{#											&lt;!-- Footer --&gt;#}
-{#											&lt;footer class="footer container-fluid pl-30 pr-30"&gt;#}
-{##}
-{#										&lt;/body&gt;#}
-{#									&lt;/html&gt;#}
-{#									</pre>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">Background Colors</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="mb-20">please use below classes background colors:</p>#}
-{#									<div class="table-responsive">#}
-{#										<table class="table table-bordered m-0">#}
-{#											<thead>#}
-{#											  <tr>#}
-{#												<th style="width: 20%;">class</th>#}
-{#												<th>value</th>#}
-{#											  </tr>#}
-{#											</thead>#}
-{#											<tbody>#}
-{#												<tr>#}
-{#													<td><code>.bg-[value]</code> </td>#}
-{#													<td>red | blue | green | yellow | orange | white | dark</td>#}
-{#												</tr>#}
-{#											</tbody>#}
-{#										</table>#}
-{#									</div>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">Text Colors</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="mb-20">please use below classes for text colors:</p>#}
-{#									<div class="table-responsive">#}
-{#										<table class="table table-bordered m-0">#}
-{#											<thead>#}
-{#											  <tr>#}
-{#												<th style="width: 20%;">class</th>#}
-{#												<th>value</th>#}
-{#											  </tr>#}
-{#											</thead>#}
-{#											<tbody>#}
-{#												<tr>#}
-{#													<td><code>.txt-[value]</code> </td>#}
-{#													<td>primary | success | warning | danger | dark | white | grey | orange </td>#}
-{#												</tr>#}
-{#											</tbody>#}
-{#										</table>#}
-{#									</div>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">scss files</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted">main scss file in present in src folder.</p>#}
-{#									<div class="table-responsive">#}
-{#									<table class="table table-bordered m-0">#}
-{#										<thead>#}
-{#										  <tr>#}
-{#											<th style="width: 20%;">File</th>#}
-{#											<th>Description</th>#}
-{#										  </tr>#}
-{#										</thead>#}
-{#										<tbody>#}
-{#										  <tr>#}
-{#											<td><code>style.scss</code> </td>#}
-{#											<td> you can update main style using this scss file.</td>#}
-{#										  </tr>#}
-{#										   <tr>#}
-{#											<td><code>style-dark.scss</code> </td>#}
-{#											<td> you can update main style for dark version using this scss file.</td>#}
-{#										  </tr>#}
-{#										  <tr>#}
-{#											<td><code>_bourbon.scss</code></td>#}
-{#											<td> for all styles of bourbon css. </td>#}
-{#										  </tr>#}
-{#										  <tr>#}
-{#											<td><code>mixins.sess</code></td>#}
-{#											<td> for  all preset mixins.</td>#}
-{#										  </tr>#}
-{#										</tbody>#}
-{#									</table>#}
-{#									</div>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">js files</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted">custom js file in present in dist/js folder.</p>#}
-{#									<div class="table-responsive">#}
-{#										<table class="table table-bordered m-0">#}
-{#											<thead>#}
-{#											  <tr>#}
-{#												<th style="width: 20%;">File</th>#}
-{#												<th>Description</th>#}
-{#											  </tr>#}
-{#											</thead>#}
-{#											<tbody>#}
-{#											  <tr>#}
-{#												<td><code>init.js</code> </td>#}
-{#												<td>all custom js required for Admintres.</td>#}
-{#											  </tr>#}
-{##}
-{#											  <tr>#}
-{#												<td><code>**-data.scss</code></td>#}
-{#												<td>all js with **-data are releted with individual pages.</td>#}
-{#											  </tr>#}
-{#											</tbody>#}
-{#										</table>#}
-{#									</div>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to edit files ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-25">All index files represent that how can you use all the widgets,tables,charts etc. Other html files are created using there original names like dropzone.html, chartist.html etc. You can easily edit them.</p>#}
-{#									<p class="muted">all js which are present in dist/js folder with **-data are releted to individual pages. We used nomenclature related to inividual html page like chartjs-data.js for chats.html, bootstrap-wysuhtml5-data.js for bootstrap-wysihtml5.html etc.</p>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to change Logo ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted">You can change the logo by either replace it from img folder or you can edit it from HTML file.</p>#}
-{#									<pre class="pt-20 mt-20">#}
-{#										&ltdiv class="logo-wrap"&gt#}
-{#											&lta href="index.html"&gt#}
-{#												&ltimg class="brand-img" src="static/img/logo.png" alt="brand"/&gt#}
-{#												&ltspan class="brand-text"&gtAdmintres&lt/span&gt#}
-{#											&lt/a&gt#}
-{#										&lt/div&gt#}
-{#									</pre>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to edit sidebar color ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-20">We provided 2 theme styles which you can use, you have to add below classes with <code>.wrapper</code> class.</p>#}
-{#									<div class="table-responsive">#}
-{#										<table class="table table-bordered m-0">#}
-{#											<thead>#}
-{#											  <tr>#}
-{#												<th style="width: 20%;">class</th>#}
-{#												<th>value</th>#}
-{#											  </tr>#}
-{#											</thead>#}
-{#											<tbody>#}
-{#												<tr>#}
-{#													<td><code>.theme-[value]-active</code> </td>#}
-{#													<td>1 | 2</td>#}
-{#												</tr>#}
-{#											</tbody>#}
-{#										</table>#}
-{#									</div>#}
-{#									<pre class="mt-20 pt-20">#}
-{#										&ltdiv class="wrapper  theme-1-active"&gt#}
-{#									</pre>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to change topbar color ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-20">We provided 14 topbar colors which you can use, you have to add below classes with <code>.wrapper</code> class.</p>#}
-{#									<div class="table-responsive">#}
-{#										<table class="table table-bordered m-0">#}
-{#											<thead>#}
-{#											  <tr>#}
-{#												<th style="width: 20%;">class</th>#}
-{#												<th>value</th>#}
-{#											  </tr>#}
-{#											</thead>#}
-{#											<tbody>#}
-{#												<tr>#}
-{#													<td><code>.navbar-top-[value]</code> </td>#}
-{#													<td>light | orange | violet | skyblue | light | green | red | purple | pink | dark | light | teal |chrome | yellow</td>#}
-{#												</tr>#}
-{#											</tbody>#}
-{#										</table>#}
-{#									</div>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to get horizontal navigation ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-20">Please add .horizontal-nav class with<code>.wrapper</code> class.</p>#}
-{#									<pre class="mt-20 pt-20">#}
-{#										&ltdiv class="wrapper  theme-1-active horizontal-nav"&gt#}
-{#									</pre>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to add carousels ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-20">Add class <code class="">.carousel-caption</code>.</p>#}
-{#									<pre class="mt-20 pt-20">#}
-{#										&lt!-- START carousel--&gt#}
-{#										&ltdiv id="carousel-example-captions" data-ride="carousel" class="carousel slide mt-40"&gt#}
-{#											&ltol class="carousel-indicators"&gt#}
-{#											   &ltli data-target="#carousel-example-captions" data-slide-to="0" class="active"&gt&lt/li&gt#}
-{#											   &ltli data-target="#carousel-example-captions" data-slide-to="1"&gt&lt/li&gt#}
-{#											   &ltli data-target="#carousel-example-captions" data-slide-to="2"&gt&lt/li&gt#}
-{#											&lt/ol&gt#}
-{#											&ltdiv role="listbox" class="carousel-inner"&gt#}
-{#											   &ltdiv class="item active"&gt#}
-{#												  &ltimg src="static/dist/img/big/img1.jpg" alt="First slide image"&gt#}
-{#												  &ltdiv class="carousel-caption"&gt#}
-{#													&ltp&gt Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt/p&gt#}
-{#												  &lt/div&gt#}
-{#											   &lt/div&gt#}
-{#											   &ltdiv class="item"&gt#}
-{#												  &ltimg src="static/dist/img/big/img2.jpg" alt="Second slide image"&gt#}
-{#												  &ltdiv class="carousel-caption"&gt#}
-{#													 &ltp&gt Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt/p&gt#}
-{#												  &lt/div&gt#}
-{#											   &lt/div&gt#}
-{#											   &ltdiv class="item"&gt#}
-{#												  &ltimg src="static/dist/img/big/img3.jpg" alt="Third slide image"&gt#}
-{#												  &ltdiv class="carousel-caption"&gt#}
-{#													&ltp&gt Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt/p&gt#}
-{#												  &lt/div&gt#}
-{#											   &lt/div&gt#}
-{#											&lt/div&gt#}
-{#											&lta href="#carousel-example-captions" role="button" data-slide="prev" class="left carousel-control"&gt &ltspan aria-hidden="true" class="fa fa-angle-left"&gt&lt/span&gt &ltspan class="sr-only"&gtPrevious&lt/span&gt &lt/a&gt &lta href="#carousel-example-captions" role="button" data-slide="next" class="right carousel-control"&gt &ltspan aria-hidden="true" class="fa fa-angle-right"&gt&lt/span&gt &ltspan class="sr-only"&gtNext&lt/span&gt &lt/a&gt#}
-{#										&lt/div&gt#}
-{#										&lt!-- END carousel--&gt#}
-{#									</pre>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to add modals ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-20">Please add below code snippet for modals.</p>#}
-{#									<pre class="mt-20 pt-20">#}
-{#										&ltdiv class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;"&gt#}
-{#											&ltdiv class="modal-dialog modal-lg"&gt#}
-{#												&ltdiv class="modal-content"&gt#}
-{#													&ltdiv class="modal-header"&gt#}
-{#														&ltbutton type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt×&lt/button&gt#}
-{#														&lth5 class="modal-title" id="myLargeModalLabel"&gtLarge modal&lt/h5&gt#}
-{#													&lt/div&gt#}
-{#													&ltdiv class="modal-body"&gt#}
-{#														&lth5 class="mb-15"&gtOverflowing text to show scroll behavior&lt/h5&gt#}
-{#														&ltp&gtPraesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt/p&gt#}
-{#														&ltp&gtAenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.&lt/p&gt#}
-{#													&lt/div&gt#}
-{#													&ltdiv class="modal-footer"&gt#}
-{#														&ltbutton type="button" class="btn btn-danger text-left" data-dismiss="modal"&gtClose&lt/button&gt#}
-{#													&lt/div&gt#}
-{#												&lt/div&gt#}
-{#												&lt!-- /.modal-content --&gt#}
-{#											&lt/div&gt#}
-{#											&lt!-- /.modal-dialog --&gt#}
-{#										&lt/div&gt#}
-{#										&lt!-- Button trigger modal --&gt#}
-{#										&ltimg src="static/dist/img/modals/model2.png" alt="default" data-toggle="modal" data-target=".bs-example-modal-lg" class="model_img img-responsive"/&gt#}
-{#									</pre>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to add tabs ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-20">Default version of tab add <code>tab-struct custom-tab-1</code> class.</p>#}
-{#									<pre class="mt-20 pt-20">#}
-{#										&ltdiv  class="tab-struct custom-tab-1 mt-40"&gt#}
-{#											&ltul role="tablist" class="nav nav-tabs" id="myTabs_7"&gt#}
-{#												&ltli class="active" role="presentation"&gt&lta aria-expanded="true"  data-toggle="tab" role="tab" id="home_tab_7" href="#home_7"&gtactive&lt/a&gt&lt/li&gt#}
-{#												&ltli role="presentation" class=""&gt&lta  data-toggle="tab" id="profile_tab_7" role="tab" href="#profile_7" aria-expanded="false"&gtinactive&lt/a&gt&lt/li&gt#}
-{#												&ltli class="dropdown" role="presentation"&gt#}
-{#													&lta  data-toggle="dropdown" class="dropdown-toggle" id="myTabDrop_7" href="#" aria-expanded="false"&gtDropdown &ltspan class="caret"&gt&lt/span&gt&lt/a&gt#}
-{#													&ltul id="myTabDrop_7_contents"  class="dropdown-menu"&gt#}
-{#														&ltli class=""&gt&lta  data-toggle="tab" id="dropdown_13_tab" role="tab" href="#dropdown_13" aria-expanded="true"&gt@fat&lt/a&gt&lt/li&gt#}
-{#														&ltli class=""&gt&lta  data-toggle="tab" id="dropdown_14_tab" role="tab" href="#dropdown_14" aria-expanded="false"&gt@mdo&lt/a&gt&lt/li&gt#}
-{#													&lt/ul&gt#}
-{#												&lt/li&gt#}
-{#											&lt/ul&gt#}
-{#											&ltdiv class="tab-content" id="myTabContent_7"&gt#}
-{#												&ltdiv  id="home_7" class="tab-pane fade active in" role="tabpanel"&gt#}
-{#													&ltp&gtLorem ipsum dolor sit amet, et pertinax ocurreret scribentur sit, eum euripidis assentior ei. In qui quodsi maiorum, dicta clita duo ut. Fugit sonet quo te. Ad vel quando causae signiferumque. Aperiam luptatum senserit eu vis, eu ius purto torquatos vituperatoribus.An nec fastidii eligendi molestiae.&lt/p&gt#}
-{#												&lt/div&gt#}
-{#												&ltdiv  id="profile_7" class="tab-pane fade" role="tabpanel"&gt#}
-{#													&ltp&gtFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.&lt/p&gt#}
-{#												&lt/div&gt#}
-{#												&ltdiv id="dropdown_13" class="tab-pane fade " role="tabpanel"&gt#}
-{#													&ltp&gtEtsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.&lt/p&gt#}
-{#												&lt/div&gt#}
-{#												&ltdiv id="dropdown_14" class="tab-pane fade" role="tabpanel"&gt#}
-{#													&ltp&gtTrust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater.&lt/p&gt#}
-{#												&lt/div&gt#}
-{#											&lt/div&gt#}
-{#										&lt/div&gt#}
-{#									</pre>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to add accordions ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-20">Default version of accordions.</p>#}
-{#									<pre class="mt-20 pt-20">#}
-{#										&ltdiv class="panel-group accordion-struct" id="accordion_1" role="tablist" aria-multiselectable="true"&gt#}
-{#											&ltdiv class="panel panel-default"&gt#}
-{#												&ltdiv class="panel-heading activestate" role="tab" id="heading_1"&gt#}
-{#													&lta role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapse_1" aria-expanded="true"&gtcollapse one&lt/a&gt#}
-{#												&lt/div&gt#}
-{#												&ltdiv id="collapse_1" class="panel-collapse collapse in" role="tabpanel"&gt#}
-{#													&ltdiv class="panel-body pa-15"&gt Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer la. &lt/div&gt#}
-{#												&lt/div&gt#}
-{#											&lt/div&gt#}
-{#											&ltdiv class="panel panel-default"&gt#}
-{#												&ltdiv class="panel-heading" role="tab" id="heading_2"&gt#}
-{#													&lta class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapse_2" aria-expanded="false"&gtcollapse two &lt/a&gt#}
-{#												&lt/div&gt#}
-{#												&ltdiv id="collapse_2" class="panel-collapse collapse" role="tabpanel"&gt#}
-{#													&ltdiv class="panel-body pa-15"&gt Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, &lt/div&gt#}
-{#												&lt/div&gt#}
-{#											&lt/div&gt#}
-{#											&ltdiv class="panel panel-default"&gt#}
-{#												&ltdiv class="panel-heading" role="tab" id="heading_3"&gt#}
-{#													&lta class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapse_3" aria-expanded="false" &gtcollapse three&lt/a&gt#}
-{#												&lt/div&gt#}
-{#												&ltdiv id="collapse_3" class="panel-collapse collapse" role="tabpanel"&gt#}
-{#													&ltdiv class="panel-body pa-15"&gt Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, inable VHS. &lt/div&gt#}
-{#												&lt/div&gt#}
-{#											&lt/div&gt#}
-{#											&ltdiv class="panel panel-default"&gt#}
-{#												&ltdiv class="panel-heading" role="tab" id="heading_4"&gt#}
-{#													&lta class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapse_4" aria-expanded="false"&gt collapse four&lt/a&gt#}
-{#												&lt/div&gt#}
-{#												&ltdiv id="collapse_4" class="panel-collapse collapse" role="tabpanel"&gt#}
-{#													&ltdiv class="panel-body pa-15"&gt Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, inable VHS. &lt/div&gt#}
-{#												&lt/div&gt#}
-{#											&lt/div&gt#}
-{#										&lt/div&gt#}
-{#									</pre>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to edit layout ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-20">For all the layout you have to add below classes with <code>.wrapper</code> class.</p>#}
-{#									<code class="block mb-10">For boxed layout add .</code>#}
-{#									<code class="block mb-10">For dark version use <b class="txt-dark">grunt sass-dark</b></code>#}
-{#									<code class="block mb-10">For rtl version use <b class="txt-dark">grunt sass-rtl</b></code>#}
-{#									<code class="block mb-10">For scrollable header add .scrollable-nav</code>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						 <div class="panel panel-default card-view">#}
-{#							<div class="panel-heading">#}
-{#								<div class="pull-left">#}
-{#									<h6 class="panel-title txt-dark">How to edit Weather app ?</h6>#}
-{#								</div>#}
-{#								<div class="clearfix"></div>#}
-{#							</div>#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p class="muted mb-20">We provided working weather app with the help of yahoo API.</p>#}
-{#									<p class="muted mb-20">For editing the app first open simpleweather-data.js file,If you want to use weather app with forcast of seven day use</p>#}
-{#									<code class="block mb-10">/*With Forcast*/<br>#}
-{#									$.simpleWeather({static.</code>#}
-{#									<p class="muted mb-20">If you want to use weather app withot forcastuse</p>#}
-{#									<code class="block mb-10">/*Without Forcast*/<br>#}
-{#									$.simpleWeather({static.</code>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#						<div class="panel panel-default card-view pt-0">#}
-{#							<div class="panel-wrapper collapse in">#}
-{#								<div class="panel-body">#}
-{#									<p><strong>Note : Images are not included in downloaded version source.</strong></p>#}
-{#								</div>#}
-{#							</div>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#							<div class="panel panel-default card-view">#}
-{#								<div class="panel-heading">#}
-{#									<div class="pull-left">#}
-{#										<h6 class="panel-title txt-dark">credits</h6>#}
-{#									</div>#}
-{#									<div class="clearfix"></div>#}
-{#								</div>#}
-{#								<div class="panel-wrapper collapse in">#}
-{#									<div class="panel-body">#}
-{#										<ul class="common-credits">#}
-{#										<li>Bootstrap framework</li>#}
-{#										<li><a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>#}
-{#										<li>Jquery</li>#}
-{#										<li><a href="https://jquery.com/">https://jquery.com/</a></li>#}
-{#										<li>Material Design Iconic Font</li>#}
-{#										<li><a href="http://zavoloklom.github.io/material-design-iconic-font/icons.html">http://zavoloklom.github.io/material-design-iconic-font/icons.html</a></li>#}
-{#										<li>Font-Awesome</li>#}
-{#										<li><a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a></li>#}
-{#										<li>Themify</li>#}
-{#										<li><a href="https://themify.me/themify-icons">https://themify.me/themify-icons</a></li>#}
-{#										<li>linea-icon</li>#}
-{#										<li><a href="http://linea.io/">http://linea.io/</a></li>#}
-{#										<li>Simple line icons</li>#}
-{#										<li><a href="simplelineicons.com">simplelineicons.com</a></li>#}
-{##}
-{#										<li>Pe-7 icons</li>#}
-{#										<li><a href="http://themes-pixeden.com/font-demos/7-stroke/">http://themes-pixeden.com/font-demos/7-stroke/</a></li>#}
-{##}
-{#										<li>Sweet-Alert</li>#}
-{#										<li><a href="http://tristanedwards.me/sweetalert">http://tristanedwards.me/sweetalert</a></li>#}
-{#										<li>Nestable</li>#}
-{#										<li><a href="http://dbushell.com/">http://dbushell.com/</a></li>#}
-{#										<li>Slimscroll</li>#}
-{#										<li><a href="http://rocha.la/jQuery-slimScroll">http://rocha.la/jQuery-slimScroll</a></li>#}
-{#										<li>Full Calendar</li>#}
-{#										<li><a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a></li>#}
-{##}
-{#										<li>Bootstrap-timepicker</li>#}
-{#										<li><a href="http://jdewit.github.com/bootstrap-timepicker">http://jdewit.github.com/bootstrap-timepicker</a></li>#}
-{#										<li>Bootstrap Colorpicker</li>#}
-{#										<li><a href="http://www.eyecon.ro/bootstrap-colorpicker">http://www.eyecon.ro/bootstrap-colorpicker</a></li>#}
-{#										<li>Multi-select</li>#}
-{#										<li><a href="http://loudev.com/">http://loudev.com/</a></li>#}
-{#										<li>Select2</li>#}
-{#										<li><a href="https://select2.github.io/">https://select2.github.io/</a></li>#}
-{#										<li>Wysihtml5</li>#}
-{#										<li><a href="https://github.com/xing/wysihtml5">https://github.com/xing/wysihtml5</a></li>#}
-{#										<li>Datatables</li>#}
-{#										<li><a href="https://www.datatables.net/">https://www.datatables.net/</a></li>#}
-{#										<li>Jsgrid</li>#}
-{#										<li><a href="http://js-grid.com/">http://js-grid.com/</a></li>#}
-{#										<li>Morris</li>#}
-{#										<li><a href="http://morrisjs.github.io/morris.js/">http://morrisjs.github.io/morris.js/</a></li>#}
-{#										<li>Chartjs</li>#}
-{#										<li><a href="http://chartjs.org/">http://chartjs.org/</a></li>#}
-{#										<li>Sparkline</li>#}
-{#										<li><a href="http://omnipotent.net/jquery.sparkline/">http://omnipotent.net/jquery.sparkline/</a>#}
-{#										</li>#}
-{#										<li>Google maps</li>#}
-{#										<li><a href="https://hpneo.github.io/gmaps/">https://hpneo.github.io/gmaps/</a></li>#}
-{#										<li>Vector Maps</li>#}
-{#										<li><a href="http://jqvmap.com/">http://jqvmap.com/</a></li>#}
-{#										<li>Pexels (images)</li>#}
-{#										<li><a href="https://pexels.com/">https://pexels.com/</a></li>#}
-{#										<li>Flot-charts</li>#}
-{#										<li><a href="http://www.flotcharts.org/">http://www.flotcharts.org/</a></li>#}
-{#										<li>Owl carousel</li>#}
-{#										<li><a href="http://owlgraphic.com/owlcarousel/"> http://owlgraphic.com/owlcarousel/</a></li>#}
-{#										<li>Switchery</li>#}
-{#										<li><a href="https://github.com/abpetkov/switchery"> https://github.com/abpetkov/switchery</a></li>#}
-{#										<li>Bootstrap select</li>#}
-{#										<li><a href="https://github.com/silviomoreto/bootstrap-select"> https://github.com/silviomoreto/bootstrap-select</a></li>#}
-{#										<li>Wysiwig Editor</li>#}
-{#										<li><a href="http://www.tinymce.com/">http://www.tinymce.com/</a></li>#}
-{#										<li>Chartist chart</li>#}
-{#										<li><a href="https://gionkunz.github.io/chartist-js/"> https://gionkunz.github.io/chartist-js/</a></li>#}
-{#									  </ul>#}
-{##}
-{#									</div>#}
-{#								</div>#}
-{#							</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{##}
-{#				<!-- Row -->#}
-{#				<div class="row">#}
-{#					<div class="col-sm-12">#}
-{#							<div class="panel panel-default card-view">#}
-{#								<div class="panel-heading">#}
-{#									<div class="pull-left">#}
-{#										<h6 class="panel-title txt-dark">Support</h6>#}
-{#									</div>#}
-{#									<div class="clearfix"></div>#}
-{#								</div>#}
-{#								<div class="panel-wrapper collapse in">#}
-{#									<div class="panel-body">#}
-{#										<p class="muted">If you have any questions that aren’t covered in this article, please mail us at <a href="mailto:contact@hencework.com">contact@hencework.com</a></p>#}
-{#									</div>#}
-{#								</div>#}
-{#							</div>#}
-{#					</div>#}
-{#				</div>#}
-{#				<!-- /Row -->#}
-{#			</div>#}
-			<!-- /Row -->
+        <div class="row">
+            <div class="col-sm-12">
+                {#						 <div class="panel panel-default card-view">#}
+                <div>
+                    <br>
+                    <h3 class="txt-dark" style="text-align:center;font-weight: bold;margin-top:10px;">추진 배경 및 목적</h3>
+                    <br></br>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
 
-			<!-- Footer -->
-{#			<footer class="footer pl-30 pr-30">#}
-{#				<div class="container">#}
-{#					<div class="row">#}
-{#						<div class="col-sm-6">#}
-{#							<p>2018 &copy; Admintres. Pampered by Hencework</p>#}
-{#						</div>#}
-{#						<div class="col-sm-6 text-right">#}
-{#							<p>Follow Us</p>#}
-{#							<a href="#"><i class="fa fa-facebook"></i></a>#}
-{#							<a href="#"><i class="fa fa-twitter"></i></a>#}
-{#							<a href="#"><i class="fa fa-google-plus"></i></a>#}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#			</footer>#}
-			<!-- /Footer -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-default border-panel card-view">
+                    <div class="panel-heading">
+                        <div class="pull-left">
+                            <h6 class="panel-title txt-dark">사망원인에 따른 어린이 사망자수(2014-2016년)</h6>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-wrapper collapse in">
+                        <div class="panel-body">
+                            <div id="morris_bar_chart" class="morris-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="panel panel-default border-panel card-view">
+                    <div class="panel-heading">
+                        <div class="pull-left">
+                            <h6 class="panel-title txt-dark">어린이 교통사고 사망자 유형별 비율</h6>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-wrapper collapse in">
+                        <div class="panel-body">
+                            <canvas id="chart_8" height="175"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-default border-panel card-view">
+                    <div class="panel-heading">
+                        <div class="pull-left">
+                            <h6 class="panel-title txt-dark">자녀의 안전에서 가장 우려되는 부분</h6>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-wrapper collapse in">
+                        <div class="panel-body">
+                            <canvas id="chart_6" height="165"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default border-panel card-view">
+                    <div class="panel-heading">
+                        <div class="pull-left">
+                            <h6 class="panel-title txt-dark">아동대상 성범죄 발생 건수 추이(2006-2015년)</h6>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-wrapper collapse in">
+                        <div id="morris_extra_line_chart" class="morris-chart"></div>
+                    </div>
+                </div>
+            </div>
 
-		</div>
-        <!-- /Main Content -->
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="">
+                    <div class="panel-wrapper collapse in">
+                        <div class="pull-left">
+                            <p class="muted"> 최근 어린이집 폭행, 어린이 유괴 미수, 어린이 성범죄 증가 등 어린이에 대한 각종 범죄와 사고들로 어린이의 안전에 대한 관심이
+                                높아지고 있습니다. 이에 스스로를 지킬 수 있는 판단력과 신체적 조건이 부족하여 보호가 필요한 어린이의 안전에 관한 시스템을 제안하였습니다.<br>통계청이
+                                공개한 보고서 ‘사고에 의한 어린이 사망:1996~2016년’을 보면 2014~2016년 3년 동안 비의도적 사고로 숨진 만 14세 이하 어린이 중
+                                42.5%가 운수사고로 인해 사망하였고, 이중 43.7%가 보행 중 사고를 당한 것으로 집계되었습니다. 이에 매일 등하교를 하는 자녀를 둔 부모들의 걱정이 클
+                                것이라고 생각하였습니다.<br>
+                                또한 통계청에서 뽑은
+                                <자녀의 안전에서 가장 우려되는 부분 1순위>결과 교통사고 30.8%, 성범죄 17.5%로 1,2위를 차지하고 있었고, 2016년 경찰청의 범죄분석에 따르면
+                                    2006~2015년까지 만 13세 미만을 대상으로 한 성범죄의 수가 증가 추세를 보이고 있습니다. 이런 결과에 따라 본 프로젝트에서는 사망원인 1위이자
+                                    걱정거리 1위인 교통사고와 지속적으로 이슈화 되고 증가하고 있는 성범죄 데이터를 아이들의 안전을 판단할 수 있는 요소로 지정하였습니다.<br>
+                                    이를 토대로 보호자와 아동 스스로가 범죄나 사고에 취약한 물리적 환경을 판별하고 이를 회피하게 함으로써 범죄 혹은 사고 노출 기회를 감소시키기 위함에
+                                    있습니다.
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                {#						 <div class="panel panel-default card-view">#}
+                <div>
+                    <br>
+                    <h3 class="txt-dark" style="text-align:center;font-weight: bold;margin-top:10px;">배경 지식</h3>
+                    <br></br>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default border-panel card-view">
+                    <div class="panel-wrapper collapse in">
+                        <div>
+                            <img src="static/img/intro/chikno.png"
+                                 style="width:70%;height:40%;display:block;margin-left:auto;margin-right:auto;">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                {#						 <div class="panel panel-default card-view">#}
+                <div>
+                    <br>
+                    <h3 class="txt-dark" style="text-align:center;font-weight: bold;margin-top:10px;">기능</h3>
+                    <br></br>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default border-panel card-view">
+                    <div class="panel-wrapper collapse in" style="">
+                        <div style="display:block;margin-left:auto;margin-right:auto;">
+                                <span>
+                                     <img src="static/img/intro/f1.png"
+                                          style="width:20%;height:30%;margin-left:6%;margin-right:2.5%;">
+                                </span>
+                            <span>
+                                     <img src="static/img/intro/f2.png"
+                                          style="width:20%;height:30%;margin-left:auto;margin-right:2.5%;">
+                                </span>
+                            <span>
+                                     <img src="static/img/intro/f3.png"
+                                          style="width:20%;height:30%;margin-left:auto;margin-right:2.5%;">
+                                </span>
+                            <span>
+                                     <img src="static/img/intro/f4.png"
+                                          style="width:20%;height:30%;margin-left:auto;margin-right:5%;">
+                                </span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="">
+                    <div class="panel-wrapper collapse in">
+                        <div class="pull-left">
+                            <p class="muted">
+                            <ul>
+                                <li>경로안내 기능 : 경로안내 기능으로 최단 경로를 알 수 있게 하고, 출발지와 목적지의 중심점으로부터의 반경 내의 안전요소와 위험 요소를 알려준다.
+                                </li>
+                                <li>안전요소(총 9개) : 어린이보호구역, 경찰서, 초등학교, 유치원, 어린이집, 어린이놀이시설, 아동복지시설, CCTV,아동안전지킴이집,</li>
+                                <li>위험요소(총 7개) : 교통사고, 어린이보행자사고, 스쿨존내교통사고, 공사진행현황, 유흥업소, 숙박업소, 당구장</li>
+                                <li>안전등급 : 현재 위치 또는 선택한 위치의 반경 내 위험요소와 안전요소를 분석하여 위험등급을 3단계로 표시한다.<br></li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    </div>
-    <!-- /#wrapper -->
-	
-	<!-- JavaScript -->
-	
-    <!-- jQuery -->
-    <script src="static/vendors/bower_components/jquery/dist/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="static/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    
-	<!-- Owl JavaScript -->
-	<script src="static/vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-		
-	<!-- Data table JavaScript -->
-	<script src="static/vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-	<script src="static/dist/js/dataTables-data.js"></script>
-    <!--char javascript-->
-    <script src="static/vendors/chart.js/Chart.min.js"></script>
-	<script src="static/dist/js/chartjs-data.js"></script>
-     <!-- Morris Charts JavaScript -->
-    <script src="static/vendors/bower_components/raphael/raphael.min.js"></script>
-    <script src="static/vendors/bower_components/morris.js/morris.min.js"></script>
-    <script src="static/dist/js/morris-data.js"></script>
-	<!-- Slimscroll JavaScript -->
-	<script src="static/dist/js/jquery.slimscroll.js"></script>
-    <!--easypiechart!-->
-	<script src="static/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-	<script src="static/dist/js/easypiechart-data.js"></script>
-	<!-- Switchery JavaScript -->
-	<script src="static/vendors/bower_components/switchery/dist/switchery.min.js"></script>
-	
-	<!-- Fancy Dropdown JS -->
-	<script src="static/dist/js/dropdown-bootstrap-extended.js"></script>
-	
-	<!-- Init JavaScript -->
-	<script src="static/dist/js/init.js"></script>
-	
-</body>
-
-</html>
+{% endblock content %}
+{% block script %}
+    <script src="static/js/chart/Chart.min.js"></script>
+    <script src="static/js/chart/raphael.min.js"></script>
+    <script src="static/js/chart/morris.min.js"></script>
+    <script src="static/js/chart/jquery.easypiechart.min.js"></script>
+    <script src="static/js/chart/data/chartjs-data.js"></script>
+    <script src="static/js/chart/data/morris-data.js"></script>
+    <script src="static/js/chart/data/easypiechart-data.js"></script>
+{% endblock script %}

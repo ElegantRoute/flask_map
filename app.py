@@ -47,7 +47,7 @@ def init():
                 ('schoolZone','info'),('construction','사업명'),
                 ('childPedestrianAccident','다발지명'),('childSafetyZone','대상시설명'),
                 ('fireStation','소방서'),('fireStationSafetyCenter','119안전센터명'),('roomSalon', '사업장명'),
-                ('policeOffice','경찰서명'),('childrSafetyHouse','이름'),('motel','사업장명'),('playGround','시설명'),
+                ('policeOffice','경찰서명'),('childSafetyHouse','이름'),('motel','사업장명'),('playGround','시설명'),
                 ('elementarySchool','시설명'),('kindergarten','시설명'),('cctv','관리기관명'),
               ]
 

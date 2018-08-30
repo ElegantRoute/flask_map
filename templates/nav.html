@@ -41,23 +41,12 @@
                 <div class="clearfix"></div>
             </a>
         </li>
-        <li>
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr">
-                <div class="pull-left"><i class="ti-zoom-in mr-20"></i><span class="right-nav-text">예측 분석</span>
-                </div>
-                <div class="pull-right"><i class="ti-angle-down"></i></div>
+        <li {% if request.path=='/model' %}class="active"{% endif %}>
+            <a href="{{ url_for('model') }}">
+                <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">예측 분석</span></div>
+                <div class="pull-right"></div>
                 <div class="clearfix"></div>
             </a>
-            <ul id="ecom_dr" class="collapse collapse-level-1">
-                <li>
-                    <a href="{{ url_for('gis') }}">
-                        <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">구별 안전 관련</span>
-                        </div>
-                        <div class="pull-right"></div>
-                        <div class="clearfix"></div>
-                    </a>
-                </li>
-            </ul>
         </li>
     </ul>
 </div>

@@ -154,11 +154,13 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="307" column="97" selection-start-line="307" selection-start-column="97" selection-end-line="307" selection-end-column="97" />
+            <state relative-caret-position="124">
+              <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
               <folding>
                 <element signature="e#11710#11791#0#HTML" expanded="true" />
+                <element signature="e#12050#12075#0#HTML" expanded="true" />
                 <element signature="e#12756#12782#0#HTML" expanded="true" />
+                <element signature="e#13035#13061#0#HTML" expanded="true" />
                 <element signature="e#14521#14547#0#HTML" expanded="true" />
               </folding>
             </state>
@@ -536,20 +538,6 @@
       <option name="presentableId" value="Default" />
       <updated>1534926120456</updated>
     </task>
-    <task id="LOCAL-00001" summary="마지막">
-      <created>1535561510520</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1535561510520</updated>
-    </task>
-    <task id="LOCAL-00002" summary="마지막">
-      <created>1535561833450</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1535561833450</updated>
-    </task>
     <task id="LOCAL-00003" summary="마지막">
       <created>1535563097039</created>
       <option name="number" value="00003" />
@@ -879,7 +867,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535589634142</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="last">
+      <created>1535589835103</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1535589835104</updated>
+    </task>
+    <task id="LOCAL-00051" summary="last">
+      <created>1535589892052</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1535589892052</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1196,11 +1198,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="307" column="97" selection-start-line="307" selection-start-column="97" selection-end-line="307" selection-end-column="97" />
+        <state relative-caret-position="124">
+          <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
           <folding>
             <element signature="e#11710#11791#0#HTML" expanded="true" />
+            <element signature="e#12050#12075#0#HTML" expanded="true" />
             <element signature="e#12756#12782#0#HTML" expanded="true" />
+            <element signature="e#13035#13061#0#HTML" expanded="true" />
             <element signature="e#14521#14547#0#HTML" expanded="true" />
           </folding>
         </state>

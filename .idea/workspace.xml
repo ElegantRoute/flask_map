@@ -154,8 +154,8 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+            <state relative-caret-position="122">
+              <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -229,7 +229,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Fullscreen</find>
       <find>http://</find>
       <find>http://topopentile1.tmap.co.kr/</find>
       <find>data-</find>
@@ -259,6 +258,7 @@
       <find>border</find>
       <find>CCTV</find>
       <find>tmapa</find>
+      <find>badbad</find>
     </findStrings>
     <replaceStrings>
       <replace>/fonts/</replace>
@@ -340,8 +340,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="214" />
-    <option name="y" value="101" />
+    <option name="x" value="77" />
+    <option name="y" value="82" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
@@ -812,7 +812,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535588128332</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="last">
+      <created>1535588244913</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1535588244913</updated>
+    </task>
+    <task id="LOCAL-00043" summary="last">
+      <created>1535588271566</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1535588271566</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -825,7 +839,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="214" y="101" width="1680" height="1027" extended-state="0" />
+    <frame x="158" y="430" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932158" weight="0.3296582" />
@@ -1129,8 +1143,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+        <state relative-caret-position="122">
+          <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
         </state>
       </provider>
     </entry>

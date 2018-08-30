@@ -3,7 +3,7 @@
         <li class="navigation-header">
             <a href="/">
                         <span class="brand-text">
-                            <img style="height: 70px; " src="static/icon/logo3.png" alt="우아한 길"/></span>
+                            <img style="height: 50px; " src="static/icon/logo3.png" alt="우아한 길"/></span>
             </a>
         </li>
         <li {% if request.path=='/intro' %}class="active"{% endif %}>
@@ -43,7 +43,7 @@
         </li>
         <li {% if request.path=='/model' %}class="active"{% endif %}>
             <a href="{{ url_for('model') }}">
-                <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">예측 분석</span></div>
+                <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">예측 모델 개발</span></div>
                 <div class="pull-right"></div>
                 <div class="clearfix"></div>
             </a>

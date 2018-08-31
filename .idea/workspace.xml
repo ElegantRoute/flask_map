@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a0e7ccd4-6cec-486d-91b7-ba2773785dbd" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="a0e7ccd4-6cec-486d-91b7-ba2773785dbd" name="Default Changelist" comment="last">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/e.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/e.html" afterDir="false" />
+    </list>
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +18,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/flask_map_master$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535523464208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_map$Flask__app_py___1_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535593787020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask$Admintres.coverage" NAME="Admintres Coverage Results" MODIFIED="1535430527496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Admintres$Admintres.coverage" NAME="Admintres Coverage Results" MODIFIED="1535429559298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1535523981428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -129,54 +138,114 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/tmap.html">
+      <file leaf-file-name="echart3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/echart3.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="5122">
               <caret line="394" column="24" selection-start-line="394" selection-start-column="24" selection-end-line="394" selection-end-column="24" />
+=======
+            <state relative-caret-position="30">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/init.js">
+      <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2964">
-              <caret line="228" column="6" selection-start-line="228" selection-start-column="6" selection-end-line="228" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/clutchWidgetsInit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="124">
+              <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#11710#11791#0#HTML" expanded="true" />
+                <element signature="e#12050#12075#0#HTML" expanded="true" />
+                <element signature="e#12756#12782#0#HTML" expanded="true" />
+                <element signature="e#13035#13061#0#HTML" expanded="true" />
+                <element signature="e#14521#14547#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/clutch_widgets.js">
+      <file leaf-file-name="e.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/e.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1677">
-              <caret line="129" column="35" selection-start-line="129" selection-start-column="35" selection-end-line="129" selection-end-column="35" />
+            <state relative-caret-position="150">
+              <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
+              <folding>
+                <element signature="e#68#93#0#HTML" expanded="true" />
+                <element signature="e#208#262#0#HTML" expanded="true" />
+                <element signature="e#264#294#0#HTML" expanded="true" />
+                <element signature="e#327#354#0#HTML" expanded="true" />
+                <element signature="e#371#425#0#HTML" expanded="true" />
+                <element signature="e#1223#1253#0#HTML" expanded="true" />
+                <element signature="e#1286#1313#0#HTML" expanded="true" />
+                <element signature="e#1330#1384#0#HTML" expanded="true" />
+                <element signature="e#1626#1652#0#HTML" expanded="true" />
+                <element signature="e#1735#1758#0#HTML" expanded="true" />
+                <element signature="e#1875#1929#0#HTML" expanded="true" />
+                <element signature="e#1947#1965#0#HTML" expanded="true" />
+                <element signature="e#2217#2235#0#HTML" expanded="true" />
+                <element signature="e#2487#2505#0#HTML" expanded="true" />
+                <element signature="e#3042#3074#0#HTML" expanded="true" />
+                <element signature="e#3111#3138#0#HTML" expanded="true" />
+                <element signature="e#3159#3213#0#HTML" expanded="true" />
+                <element signature="e#3212#3230#0#HTML" expanded="true" />
+                <element signature="e#3771#3789#0#HTML" expanded="true" />
+                <element signature="e#4041#4059#0#HTML" expanded="true" />
+                <element signature="e#3870#3900#0#HTML" expanded="true" />
+                <element signature="e#3977#4031#0#HTML" expanded="true" />
+                <element signature="e#4106#4136#0#HTML" expanded="true" />
+                <element signature="e#4169#4196#0#HTML" expanded="true" />
+                <element signature="e#4213#4267#0#HTML" expanded="true" />
+                <element signature="e#4570#4588#0#HTML" expanded="true" />
+                <element signature="e#4842#4860#0#HTML" expanded="true" />
+                <element signature="e#5114#5132#0#HTML" expanded="true" />
+                <element signature="e#5655#5685#0#HTML" expanded="true" />
+                <element signature="e#5726#5753#0#HTML" expanded="true" />
+                <element signature="e#5778#5832#0#HTML" expanded="true" />
+                <element signature="e#5648#5666#0#HTML" expanded="true" />
+                <element signature="e#5920#5938#0#HTML" expanded="true" />
+                <element signature="e#6192#6210#0#HTML" expanded="true" />
+                <element signature="e#6766#6796#0#HTML" expanded="true" />
+                <element signature="e#6829#6856#0#HTML" expanded="true" />
+                <element signature="e#6873#6927#0#HTML" expanded="true" />
+                <element signature="e#6719#6737#0#HTML" expanded="true" />
+                <element signature="e#6989#7007#0#HTML" expanded="true" />
+                <element signature="e#7259#7277#0#HTML" expanded="true" />
+                <element signature="e#7773#7791#0#HTML" expanded="true" />
+                <element signature="e#8043#8061#0#HTML" expanded="true" />
+                <element signature="e#8313#8331#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/science.html">
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/nav.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="195">
               <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+=======
+            <state relative-caret-position="590">
+              <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -193,22 +262,58 @@
               <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
             </state>
           </provider>
+=======
+      <file leaf-file-name="childPedestrianAccident.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/icon/childPedestrianAccident.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/documentation.html">
+      <file leaf-file-name="playGround.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/icon/playGround.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="childSafetyHouse.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/icon/childSafetyHouse.png">
+          <provider selected="true" editor-type-id="images" />
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="949">
               <caret line="73" selection-start-line="73" selection-end-line="73" />
+=======
+            <state relative-caret-position="207">
+              <caret line="771" column="31" selection-start-line="771" selection-start-column="31" selection-end-line="771" selection-end-column="31" />
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/echart3.html">
+      <file leaf-file-name="intro.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/intro.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="26">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
+=======
+            <state relative-caret-position="366">
+              <caret line="31" column="10" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="31" selection-end-column="10" />
+              <folding>
+                <element signature="e#1137#1161#0#HTML" expanded="true" />
+                <element signature="e#1289#1343#0#HTML" expanded="true" />
+                <element signature="e#1130#1153#0#HTML" expanded="true" />
+                <element signature="e#1186#1213#0#HTML" expanded="true" />
+                <element signature="e#1178#1232#0#HTML" expanded="true" />
+                <element signature="e#6079#6102#0#HTML" expanded="true" />
+                <element signature="e#6380#6404#0#HTML" expanded="true" />
+                <element signature="e#6532#6586#0#HTML" expanded="true" />
+                <element signature="e#6760#6783#0#HTML" expanded="true" />
+              </folding>
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
             </state>
           </provider>
         </entry>
@@ -226,42 +331,45 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>chart</find>
-      <find>bootstrap</find>
-      <find>chair</find>
-      <find>logo</find>
-      <find>brand-img</find>
-      <find>url_for</find>
-      <find>Feature</find>
-      <find>유흥업소</find>
-      <find>scss</find>
-      <find>.nav-header</find>
-      <find>static/img/intr</find>
-      <find>Roboto</find>
-      <find>perfect-scrollbar</find>
-      <find>dist/assets/owl.carousel.min.css</find>
-      <find>perfect-scrollbar.min.css</find>
-      <find>/dist/fonts/</find>
-      <find>appendToMarkers</find>
-      <find>dist/fonts</find>
-      <find>//fonts//</find>
-      <find>gmap</find>
-      <find>fixed-sidebar-left</find>
-      <find>resize</find>
-      <find>z-index</find>
-      <find>top</find>
-      <find>left</find>
-      <find>block</find>
-      <find>title</find>
-      <find>fullsc</find>
-      <find>chat</find>
-      <find>Fullscreen</find>
+      <find>http://topopentile1.tmap.co.kr/</find>
+      <find>data-</find>
+      <find>custom</find>
+      <find>dapu</find>
+      <find>category1</find>
+      <find>search</find>
+      <find>button</find>
+      <find>Gi</find>
+      <find>Geekben</find>
+      <find>Geek</find>
+      <find>under</find>
+      <find>init</find>
+      <find>count</find>
+      <find>car</find>
+      <find>prod</find>
+      <find>refre</find>
+      <find>#4dbcc5</find>
+      <find>childSafe</find>
+      <find>childsafetyzone</find>
+      <find>changeMarker('childSafetyZone')</find>
+      <find>menu_selected_bad</find>
+      <find>childSafetyHouse</find>
+      <find>childSafetyZone</find>
+      <find>img</find>
+      <find>border</find>
+      <find>CCTV</find>
+      <find>tmapa</find>
+      <find>badbad</find>
+      <find>ana</find>
+      <find>predict</find>
     </findStrings>
     <replaceStrings>
       <replace>/fonts/</replace>
+      <replace>#ff6028</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Programming\Project\pyCharm\Admintres\static\img</dir>
+      <dir>$PROJECT_DIR$/static/icon</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -270,14 +378,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/locked.html" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/menu-top.html" />
-        <option value="$PROJECT_DIR$/templates/modals.html" />
-        <option value="$PROJECT_DIR$/templates/nestable.html" />
-        <option value="$PROJECT_DIR$/templates/jsgrid-table.html" />
-        <option value="$PROJECT_DIR$/templates/profile.html" />
-        <option value="$PROJECT_DIR$/templates/product-orders.html" />
         <option value="$PROJECT_DIR$/templates/product-detail.html" />
         <option value="$PROJECT_DIR$/templates/product-checkout.html" />
         <option value="$PROJECT_DIR$/templates/product-cart.html" />
@@ -310,17 +410,25 @@
         <option value="$PROJECT_DIR$/static/css/font-awesome.min.css" />
         <option value="$PROJECT_DIR$/static/css/themify-icons.css" />
         <option value="$PROJECT_DIR$/templates/documentation.html" />
-        <option value="$PROJECT_DIR$/templates/polygon.html" />
         <option value="$PROJECT_DIR$/templates/science.html" />
-        <option value="$PROJECT_DIR$/templates/nav.html" />
-        <option value="$PROJECT_DIR$/static/js/init.js" />
-        <option value="$PROJECT_DIR$/static/css/style.css" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/echart3.html" />
         <option value="$PROJECT_DIR$/static/js/clutchWidgetsInit.js" />
         <option value="$PROJECT_DIR$/templates/tmap.html" />
         <option value="$PROJECT_DIR$/static/js/clutch_widgets.js" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/js/chart/data/morris-data.js" />
+        <option value="$PROJECT_DIR$/static/css/main.css" />
+        <option value="$PROJECT_DIR$/templates/data.html" />
+        <option value="$PROJECT_DIR$/static/js/init.js" />
+        <option value="$PROJECT_DIR$/templates/intro.html" />
+        <option value="$PROJECT_DIR$/templates/polygon.html" />
+        <option value="$PROJECT_DIR$/static/js/chart/data/echart-data2.js" />
+        <option value="$PROJECT_DIR$/static/css/classic.min.css" />
+        <option value="$PROJECT_DIR$/templates/echart3.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/map.html" />
+        <option value="$PROJECT_DIR$/templates/nav.html" />
+        <option value="$PROJECT_DIR$/templates/e.html" />
       </list>
     </option>
   </component>
@@ -330,11 +438,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="54" />
-    <option name="y" value="-27" />
-    <option name="width" value="1518" />
-    <option name="height" value="1032" />
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="98" />
+    <option name="y" value="85" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -342,41 +453,67 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="flask_map-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_map-master" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="flask_map-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_map-master" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="flask_map-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_map-master" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="flask_map-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_map-master" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="flask_map-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_map-master" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="chart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="chart" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="sweetalert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask_map" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask_map" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="use-file-nesting-rules" value="false" />
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,19 +525,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/img" />
+      <recent name="$PROJECT_DIR$/static/icon" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\je941\PycharmProjects\flask\static\img\intro" />
-      <recent name="C:\Programming\Project\pyCharm\Admintres\static\img" />
-      <recent name="C:\Programming\Project\pyCharm\Admintres\static\icon" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$/static/css" />
-      <recent name="$PROJECT_DIR$/static/js/chart" />
-      <recent name="$PROJECT_DIR$/static/js/chart/data" />
-      <recent name="$PROJECT_DIR$/static/js/map" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -432,9 +569,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
     </configuration>
     <configuration name="Flask (app.py)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+      <option name="additionalOptions" value="" />
+      <option name="application" value="" />
+      <option name="flaskDebug" value="true" />
+      <module name="Admintres" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+    </configuration>
+    <configuration name="Flask" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
       <option name="additionalOptions" value="" />
       <option name="application" value="" />
       <option name="flaskDebug" value="true" />
@@ -451,7 +604,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Flask server.Admintres" />
@@ -459,6 +611,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Flask server.Flask (app.py)" />
       </list>
     </recent_temporary>
@@ -474,6 +627,350 @@
       <option name="presentableId" value="Default" />
       <updated>1534926120456</updated>
     </task>
+    <task id="LOCAL-00007" summary="last">
+      <created>1535567380976</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1535567380976</updated>
+    </task>
+    <task id="LOCAL-00008" summary="last">
+      <created>1535567554367</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1535567554367</updated>
+    </task>
+    <task id="LOCAL-00009" summary="last">
+      <created>1535568029254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1535568029254</updated>
+    </task>
+    <task id="LOCAL-00010" summary="last">
+      <created>1535568981924</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1535568981924</updated>
+    </task>
+    <task id="LOCAL-00011" summary="last">
+      <created>1535569257467</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1535569257467</updated>
+    </task>
+    <task id="LOCAL-00012" summary="last">
+      <created>1535570828196</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1535570828196</updated>
+    </task>
+    <task id="LOCAL-00013" summary="last">
+      <created>1535571288744</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1535571288744</updated>
+    </task>
+    <task id="LOCAL-00014" summary="last">
+      <created>1535571505151</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1535571505151</updated>
+    </task>
+    <task id="LOCAL-00015" summary="last">
+      <created>1535571628114</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1535571628114</updated>
+    </task>
+    <task id="LOCAL-00016" summary="last">
+      <created>1535571829448</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1535571829448</updated>
+    </task>
+    <task id="LOCAL-00017" summary="last">
+      <created>1535572383282</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1535572383282</updated>
+    </task>
+    <task id="LOCAL-00018" summary="last">
+      <created>1535572982892</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1535572982892</updated>
+    </task>
+    <task id="LOCAL-00019" summary="last">
+      <created>1535573085092</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1535573085092</updated>
+    </task>
+    <task id="LOCAL-00020" summary="last">
+      <created>1535573146964</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1535573146965</updated>
+    </task>
+    <task id="LOCAL-00021" summary="last">
+      <created>1535573184899</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535573184899</updated>
+    </task>
+    <task id="LOCAL-00022" summary="last">
+      <created>1535573905866</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1535573905866</updated>
+    </task>
+    <task id="LOCAL-00023" summary="last">
+      <created>1535574049525</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1535574049525</updated>
+    </task>
+    <task id="LOCAL-00024" summary="last">
+      <created>1535578126695</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1535578126695</updated>
+    </task>
+    <task id="LOCAL-00025" summary="last">
+      <created>1535580167072</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1535580167072</updated>
+    </task>
+    <task id="LOCAL-00026" summary="last">
+      <created>1535583511003</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1535583511003</updated>
+    </task>
+    <task id="LOCAL-00027" summary="last">
+      <created>1535583643296</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1535583643296</updated>
+    </task>
+    <task id="LOCAL-00028" summary="last">
+      <created>1535583733391</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1535583733391</updated>
+    </task>
+    <task id="LOCAL-00029" summary="last">
+      <created>1535583915623</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1535583915623</updated>
+    </task>
+    <task id="LOCAL-00030" summary="last">
+      <created>1535583997181</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1535583997181</updated>
+    </task>
+    <task id="LOCAL-00031" summary="last">
+      <created>1535584086678</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1535584086678</updated>
+    </task>
+    <task id="LOCAL-00032" summary="last">
+      <created>1535584953599</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1535584953599</updated>
+    </task>
+    <task id="LOCAL-00033" summary="last">
+      <created>1535585200196</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1535585200196</updated>
+    </task>
+    <task id="LOCAL-00034" summary="last">
+      <created>1535586563165</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1535586563165</updated>
+    </task>
+    <task id="LOCAL-00035" summary="last">
+      <created>1535586958543</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1535586958543</updated>
+    </task>
+    <task id="LOCAL-00036" summary="last">
+      <created>1535587376066</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1535587376066</updated>
+    </task>
+    <task id="LOCAL-00037" summary="last">
+      <created>1535587450997</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1535587450997</updated>
+    </task>
+    <task id="LOCAL-00038" summary="last">
+      <created>1535587769371</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1535587769371</updated>
+    </task>
+    <task id="LOCAL-00039" summary="last">
+      <created>1535587844497</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1535587844497</updated>
+    </task>
+    <task id="LOCAL-00040" summary="last">
+      <created>1535587956110</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1535587956110</updated>
+    </task>
+    <task id="LOCAL-00041" summary="last">
+      <created>1535588128332</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1535588128332</updated>
+    </task>
+    <task id="LOCAL-00042" summary="last">
+      <created>1535588244913</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1535588244913</updated>
+    </task>
+    <task id="LOCAL-00043" summary="last">
+      <created>1535588271566</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1535588271566</updated>
+    </task>
+    <task id="LOCAL-00044" summary="last">
+      <created>1535588560198</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1535588560198</updated>
+    </task>
+    <task id="LOCAL-00045" summary="last">
+      <created>1535588680493</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1535588680493</updated>
+    </task>
+    <task id="LOCAL-00046" summary="last">
+      <created>1535589357401</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1535589357401</updated>
+    </task>
+    <task id="LOCAL-00047" summary="last">
+      <created>1535589417502</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1535589417502</updated>
+    </task>
+    <task id="LOCAL-00048" summary="last">
+      <created>1535589558378</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1535589558378</updated>
+    </task>
+    <task id="LOCAL-00049" summary="last">
+      <created>1535589634142</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1535589634142</updated>
+    </task>
+    <task id="LOCAL-00050" summary="last">
+      <created>1535589835103</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1535589835104</updated>
+    </task>
+    <task id="LOCAL-00051" summary="last">
+      <created>1535589892052</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1535589892052</updated>
+    </task>
+    <task id="LOCAL-00052" summary="last">
+      <created>1535590239317</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1535590239317</updated>
+    </task>
+    <task id="LOCAL-00053" summary="last">
+      <created>1535593203917</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1535593203917</updated>
+    </task>
+    <task id="LOCAL-00054" summary="last">
+      <created>1535593684792</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1535593684792</updated>
+    </task>
+    <task id="LOCAL-00055" summary="last">
+      <created>1535593750140</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1535593750140</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -486,6 +983,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49811321" visible="true" weight="0.14608555" />
@@ -497,18 +995,32 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+=======
+    <frame x="98" y="85" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
+    <layout>
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932158" weight="0.3296582" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932158" weight="0.3296582" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50671554" side_tool="true" visible="true" weight="0.4090408" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50524616" side_tool="true" weight="0.39222616" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932158" weight="0.32685512" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4932845" visible="true" weight="0.4090408" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.496337" weight="0.3296582" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286219" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932158" weight="0.32685512" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49811321" visible="true" weight="0.14774115" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.496337" weight="0.30540243" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32969153" />
+      <window_info id="Structure" order="1" sideWeight="0.5018868" side_tool="true" weight="0.18637532" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32969153" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,58 +1029,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="마지막" />
+    <MESSAGE value="" />
+    <MESSAGE value="last" />
+    <option name="LAST_COMMIT_MESSAGE" value="last" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/.jshintrc" />
-    <entry file="file://$PROJECT_DIR$/templates/bower.json" />
-    <entry file="file://$PROJECT_DIR$/static/js/chart/morris.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3082" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/perfect-scrollbar.min.css" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask/helpers.py" />
-    <entry file="file://$PROJECT_DIR$/static/img/chair2.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/img/chair3.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/img/1-s.png" />
-    <entry file="file://$PROJECT_DIR$/static/img/2-s.png" />
-    <entry file="file://$PROJECT_DIR$/static/img/3-s.png" />
-    <entry file="file://$PROJECT_DIR$/static/img/avatar.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/icon/billiard.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/CCTV.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/childPedestrianAccident.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/childSafetyHouse.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/childSafetyZone.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/construction.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/elementarySchool.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/fireStationSafetyCenter.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/kindergarten.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/logo2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/logo3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/icon/playGround.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/icon/schoolZone.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -581,13 +1048,7 @@
     <entry file="file://$PROJECT_DIR$/static/js/chart/data/chartjs-data.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/chart/data/morris-data.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/filter.css" />
-    <entry file="file://$PROJECT_DIR$/static/js/chart/data/echart-data2.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/bttt.red.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -614,93 +1075,313 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" selection-start-line="11" selection-start-column="308" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tmap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5122">
-          <caret line="394" column="24" selection-start-line="394" selection-start-column="24" selection-end-line="394" selection-end-column="24" />
+        <state relative-caret-position="5715">
+          <caret line="381" column="24" selection-start-line="381" selection-start-column="24" selection-end-line="381" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2964">
-          <caret line="228" column="6" selection-start-line="228" selection-start-column="6" selection-end-line="228" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/static/fonts/material-design-iconic-font/Material-Design-Iconic-Font.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/clutchWidgetsInit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="-2319">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/clutch_widgets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1677">
-          <caret line="129" column="35" selection-start-line="129" selection-start-column="35" selection-end-line="129" selection-end-column="35" />
+        <state relative-caret-position="152">
+          <caret line="640" column="22" selection-start-line="640" selection-start-column="22" selection-end-line="640" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#95#101#0" expanded="true" />
+            <element signature="e#101#107#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/science.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        <state relative-caret-position="286">
+          <caret line="104" column="6" lean-forward="true" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/chart/data/echart-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/chart/data/morris-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="300" column="20" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.waypoints.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.countTo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="5122">
+          <caret line="394" column="24" selection-start-line="394" selection-start-column="24" selection-end-line="394" selection-end-column="24" />
+=======
+        <state relative-caret-position="152">
+          <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="41" />
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/data.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="786" column="5" lean-forward="true" selection-start-line="786" selection-start-column="5" selection-end-line="786" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/owl.carousel.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-995">
+          <caret line="208" column="28" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/polygon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        <state relative-caret-position="344">
+          <caret line="1148" column="111" selection-start-line="1148" selection-start-column="111" selection-end-line="1148" selection-end-column="111" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentation.html">
+    <entry file="file://$PROJECT_DIR$/templates/science.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="195">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+=======
+        <state relative-caret-position="478">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="494">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+=======
+        <state relative-caret-position="87">
+          <caret line="649" column="29" lean-forward="true" selection-start-line="649" selection-start-column="29" selection-end-line="649" selection-end-column="29" />
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="949">
           <caret line="73" selection-start-line="73" selection-end-line="73" />
+=======
+        <state relative-caret-position="261">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#253#275#0#HTML" expanded="true" />
+            <element signature="e#571#600#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/sweetalert/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/chart/data/echart-data2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="1503" column="12" selection-start-line="1503" selection-start-column="12" selection-end-line="1503" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/classic.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="535" lean-forward="true" selection-start-column="535" selection-end-column="535" />
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/echart3.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="26">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
+=======
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="771" column="31" selection-start-line="771" selection-start-column="31" selection-end-line="771" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/cctv.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/billiard.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/childSafetyHouse.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/childSafetyZone.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/construction.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/elementarySchool.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/childPedestrianAccident.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/kindergarten.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/icon/playGround.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="156">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+=======
+        <state relative-caret-position="590">
+          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+          <folding>
+            <element signature="e#11710#11791#0#HTML" expanded="true" />
+            <element signature="e#12050#12075#0#HTML" expanded="true" />
+            <element signature="e#12756#12782#0#HTML" expanded="true" />
+            <element signature="e#13035#13061#0#HTML" expanded="true" />
+            <element signature="e#14521#14547#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="e#1137#1161#0#HTML" expanded="true" />
+            <element signature="e#1289#1343#0#HTML" expanded="true" />
+            <element signature="e#1130#1153#0#HTML" expanded="true" />
+            <element signature="e#1186#1213#0#HTML" expanded="true" />
+            <element signature="e#1178#1232#0#HTML" expanded="true" />
+            <element signature="e#6079#6102#0#HTML" expanded="true" />
+            <element signature="e#6380#6404#0#HTML" expanded="true" />
+            <element signature="e#6532#6586#0#HTML" expanded="true" />
+            <element signature="e#6760#6783#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/e.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
+          <folding>
+            <element signature="e#68#93#0#HTML" expanded="true" />
+            <element signature="e#208#262#0#HTML" expanded="true" />
+            <element signature="e#264#294#0#HTML" expanded="true" />
+            <element signature="e#327#354#0#HTML" expanded="true" />
+            <element signature="e#371#425#0#HTML" expanded="true" />
+            <element signature="e#1223#1253#0#HTML" expanded="true" />
+            <element signature="e#1286#1313#0#HTML" expanded="true" />
+            <element signature="e#1330#1384#0#HTML" expanded="true" />
+            <element signature="e#1626#1652#0#HTML" expanded="true" />
+            <element signature="e#1735#1758#0#HTML" expanded="true" />
+            <element signature="e#1875#1929#0#HTML" expanded="true" />
+            <element signature="e#1947#1965#0#HTML" expanded="true" />
+            <element signature="e#2217#2235#0#HTML" expanded="true" />
+            <element signature="e#2487#2505#0#HTML" expanded="true" />
+            <element signature="e#3042#3074#0#HTML" expanded="true" />
+            <element signature="e#3111#3138#0#HTML" expanded="true" />
+            <element signature="e#3159#3213#0#HTML" expanded="true" />
+            <element signature="e#3212#3230#0#HTML" expanded="true" />
+            <element signature="e#3771#3789#0#HTML" expanded="true" />
+            <element signature="e#4041#4059#0#HTML" expanded="true" />
+            <element signature="e#3870#3900#0#HTML" expanded="true" />
+            <element signature="e#3977#4031#0#HTML" expanded="true" />
+            <element signature="e#4106#4136#0#HTML" expanded="true" />
+            <element signature="e#4169#4196#0#HTML" expanded="true" />
+            <element signature="e#4213#4267#0#HTML" expanded="true" />
+            <element signature="e#4570#4588#0#HTML" expanded="true" />
+            <element signature="e#4842#4860#0#HTML" expanded="true" />
+            <element signature="e#5114#5132#0#HTML" expanded="true" />
+            <element signature="e#5655#5685#0#HTML" expanded="true" />
+            <element signature="e#5726#5753#0#HTML" expanded="true" />
+            <element signature="e#5778#5832#0#HTML" expanded="true" />
+            <element signature="e#5648#5666#0#HTML" expanded="true" />
+            <element signature="e#5920#5938#0#HTML" expanded="true" />
+            <element signature="e#6192#6210#0#HTML" expanded="true" />
+            <element signature="e#6766#6796#0#HTML" expanded="true" />
+            <element signature="e#6829#6856#0#HTML" expanded="true" />
+            <element signature="e#6873#6927#0#HTML" expanded="true" />
+            <element signature="e#6719#6737#0#HTML" expanded="true" />
+            <element signature="e#6989#7007#0#HTML" expanded="true" />
+            <element signature="e#7259#7277#0#HTML" expanded="true" />
+            <element signature="e#7773#7791#0#HTML" expanded="true" />
+            <element signature="e#8043#8061#0#HTML" expanded="true" />
+            <element signature="e#8313#8331#0#HTML" expanded="true" />
+          </folding>
+>>>>>>> 86671600254169c3ea74791bc2c400499ce451ed
         </state>
       </provider>
     </entry>
